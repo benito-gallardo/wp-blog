@@ -1,0 +1,67 @@
+.affiliates {
+	.hero {
+		background:url(/assets/images/affiliates-laptop-screen-templates_0.jpg) no-repeat center;
+		background-size:cover;
+	}
+  @media #{$xsmall-and-down}{
+    .text-center-mobile{
+      text-align: center !important;
+    }
+
+  }
+	.section-1{
+    .cover{
+      background-image:url(/assets/images/homepage-brand_medusa_bg.jpg);
+      height:500px;
+      right: 0;
+      top:0;
+      width:100%;
+      background-position:top left;
+      
+      @media #{$medium-and-up}{
+        position:absolute;
+        width: 50%;
+        height:100%;
+        background-position: 20% center;
+      }
+      @media #{$small-and-down}{
+        background-image: url(/assets/images/homepage_medusaBg_sm.jpg);
+      }
+      @media screen and (max-width: 350px){
+        background-position: -95px top;
+      }
+
+    }
+  }//section-1
+	.section-3{
+    .fa-gbp {
+      font-size: 36px;
+      position: relative;
+      top: -15px;
+    }
+  	background-image:url(/assets/images/brand-desk-bg.jpg);
+  	h4 {
+  		font-weight:300;
+  	}
+		.container {
+    	max-width: 1150px;
+		}
+  	.card{
+	    padding: 39px 0 40px;
+	    height: 387px;
+
+  		p{
+  			font-size: 60px;
+  		}
+  	}//card
+  	@media #{$small-and-down}{
+			background: #84CCC0;
+			.abs-top-outside {
+			    bottom: auto;
+			    top: 19px;
+			    font-size: 11.8px;
+			    font-weight: 100;
+			}
+		}// section-3 @media
+  }//section-3
+}

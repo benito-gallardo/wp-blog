@@ -1,0 +1,237 @@
+.pricing, .uk-pricing {
+    #main {
+        overflow: hidden;
+    }
+    .arrow-left {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -20px;
+        margin-left: -20px;
+        border-right: 20px solid #000;
+    }
+    .carousel.carousel-slider {
+        height: auto !important;
+        padding-top: 30px;
+        clear: both;
+        .carousel-item {
+            width: 24%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            float: left;
+            margin: 0% .5% 2%;
+            @media screen and (max-width: $small-screen-max) {
+                width: 49%;
+            }
+            @media screen and (max-width: $xsmall-screen-max) {
+                width: 99%;
+            }
+        }
+    }
+    .swipe-info {
+        display: none;
+    }
+    .material-tooltip {
+        max-width: calc(25% - 4px);
+    }
+    .annual .slide-wrapper span.cents {
+        font-size: 35px;
+        position: relative;
+        top: -20px;
+        line-height: 1;
+        left: 2px;
+    }
+    .annual .slide-wrapper span.month-slash {
+        font-size: 14px;
+        position: relative;
+        left: -35px;
+        color: #a0a0a0;
+        top: -3px;
+    }
+    .switch {
+        position: relative;
+        width: 160px;
+        margin-right: 5px;
+        float: right;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        @media screen and (max-width: $small-screen-max) {
+            float: none;
+            margin: 0 auto 3%;
+        }
+        .monthly-text {
+            position: absolute;
+            color: color("grey","base");
+            left: 15px;
+            top: 5px;
+            z-index: 1;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .annually-text {
+            position: absolute;
+            color: color("grey","base");
+            right: 15px;
+            top: 5px;
+            z-index: 1;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .switch-label {
+            display: block;
+            overflow: hidden;
+            cursor: pointer;
+            height: 30px;
+            padding: 0;
+            line-height: 30px;
+            border: 2px solid #CCCCCC;
+            border-radius: 50px;
+            background-color: #fff;
+            transition: background-color 0.3s ease-in;
+            &:before {
+                border-color: #ebebeb;
+                content: "";
+                display: block;
+                width: 80px;
+                margin: 0px;
+                background: #ebebeb;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0px;
+                border: 2px solid #CCCCCC;
+                border-radius: 50px;
+                transition: all 0.3s ease-in 0s;
+            }
+            &.turn-on:before {
+                left: 80px;
+            }
+        }
+    }
+    .slide-wrapper {
+        background: #fff;
+        border: 1px solid #dbdbdb;
+        .price {
+            line-height: 1;
+            color: #3b3b3b;
+            font-size: 36px;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 5px;
+            .sign {
+                position: relative;
+                top: -20px;
+            }
+            .num {
+                font-size: 60px;
+                vertical-align: bottom;
+            }
+        }
+        ul.general-features {
+            list-style: none;
+            padding: 0 5% 0 3rem;
+            text-align: left;
+            margin: 30px auto;
+            line-height: 1.75;
+            @media screen and (max-width: $small-screen-max) {
+                padding: 0 5% 0 4.7rem;
+            }
+        }
+        ul.highlight-features {
+            list-style: none;
+            text-align: left;
+            padding: 0 5% 0 2.1rem;
+            line-height: 2.5;
+            @media screen and (max-width: $small-screen-max) {
+                padding: 0 5% 0 3.7rem;
+            }
+        }
+        .tooltipped {
+            cursor: pointer;
+            position: relative;
+            padding-left: 1rem;
+            margin: 15px 0;
+            line-height: 1.2;
+        }
+        .checkmark {
+            color: $vol-turquoise;
+            position: absolute;
+            left: -6%;
+            top: 0;
+        }
+    }
+    #slide-1 {
+        .color-border-bar {
+            border-top: 4px solid $vol-green;
+        }
+    }
+    #slide-2 {
+        .color-border-bar {
+            border-top: 4px solid $vol-turquoise;
+        }
+    }
+    #slide-3 {
+        .color-border-bar {
+            border-top: 4px solid $vol-red;
+        }
+        .popular {
+            font-style: italic;
+            color: $vol-red;
+            position: absolute;
+            top: 8px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            font-weight: 700;
+        }
+    }
+    #slide-4 {
+        .color-border-bar {
+            border-top: 4px solid $vol-purple;
+        }
+    }
+    .section-3 .left.col {
+        margin-top: 0;
+        @media screen and (min-width: $xlarge-screen-min) {
+            margin-top: -10%;
+        }
+        @media screen and (min-width: $large-screen-min) {
+            margin-top: -5%;
+        }
+    }
+    @media screen and (max-width: $small-screen-max) {
+        .section-3 .employee-img {
+            float: none !important;
+            margin: 0 auto;
+        }
+    }
+}
+
+.mobile.touch .pricing, .mobile.touch .uk-pricing {
+    .material-tooltip {
+        display: none;
+    }
+    #carousel-container {
+        padding-top: 30px;
+        padding-bottom: 150px;
+    }
+    @media screen and (max-width: $xsmall-screen-max) {
+        .swipe-info {
+            display: block;
+        }
+    }
+    .carousel.carousel-slider {
+        overflow: visible;
+        .carousel-item {
+            position: absolute;
+            height: auto !important;
+            @media screen and (max-width: $small-screen-max) {
+                width: 99%;
+            }
+        }
+    }
+}

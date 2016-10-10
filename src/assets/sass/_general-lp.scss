@@ -1,0 +1,311 @@
+.general-lp {
+	.hero {
+		background:url(/assets/images/affiliates-laptop-screen-templates_0.jpg) no-repeat center;
+		background-size:cover;
+	}
+	.section-1{
+    .cover{
+      background-image:url(/assets/images/homepage-brand_medusa_bg.jpg);
+      height:500px;
+      right: 0;
+      top:0;
+      width:100%;
+      background-position:top left;
+      
+      @media #{$medium-and-up}{
+        position:absolute;
+        width: 50%;
+        height:100%;
+        background-position: 20% center;
+      }
+      @media #{$small-and-down}{
+        background-image: url(/assets/images/homepage_medusaBg_sm.jpg);
+      }
+      @media screen and (max-width: 350px){
+        background-position: -95px top;
+      }
+
+    }
+  }//section-1
+	.section-3{
+  	background-image:url(/assets/images/brand-desk-bg.jpg);
+  	h4 {
+  		font-weight:300;
+  	}
+		.container {
+    	max-width: 1150px;
+		}
+  	.card{
+	    padding: 39px 0 40px;
+	    height: 387px;
+
+  		p{
+  			font-size: 60px;
+  		}
+  	}//card
+  	@media #{$small-and-down}{
+			background: #84CCC0;
+			.abs-top-outside {
+			    bottom: auto;
+			    top: 19px;
+			    font-size: 11.8px;
+			    font-weight: 100;
+			}
+		}// section-3 @media
+  }//section-3
+}
+
+.general-sl {
+  .hero {
+    background-image: url("/assets/images/lp-sem-general-sl-themes-three.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media #{$small-and-down} {
+      background-image: url("/assets/images/lp-sem-general-sl-themes-two.jpg");
+      background-size: 100% auto;
+      padding-bottom: 70%;
+      background-position: bottom;
+    }
+  }
+  // @media #{$medium-and-up} {
+  //   .mvalign-middle {
+  //     position: relative;
+  //     top: 50%;
+  //     -webkit-transform: translateY(-50%);
+  //     -ms-transform: translateY(-50%);
+  //     transform: translateY(-50%);
+  //   }
+  // }
+  .h-32 {
+    font-size: 2rem;
+  }
+  .h-20 {
+    font-size: 1.25rem;
+  }
+  .opacity-85 {
+    opacity: .85;
+  }
+  .quote-marks {
+    font-size: 1rem;
+  }
+  .section-3 {
+    background-position: center bottom;
+    background-size: 140% auto;
+    background-repeat: no-repeat;
+    background-color: #84CCC0;
+    padding-bottom: 11.5%;
+  }
+  .section-3 .card {
+    height: auto;
+  }
+}
+
+.general-lh {
+  .navbar-fixed nav {
+    position: absolute;
+  }
+  .width-80 {
+    width: 80px;
+  }
+  .max-width-430 {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  .max-width-520 {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .height-120 {
+    height: 120px;
+  }
+  .ls-6 {
+    letter-spacing: .06rem;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-1 {
+    z-index: 1;
+  }
+  .opacity-40 {
+    opacity: .4;
+  }
+  .btn-large {
+    padding: 0 1.6em;
+  }
+  @media #{$small-and-up} {
+    .svalign-middle {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .sfull-height {
+      height: 100%;
+    }
+  }
+  @media #{$xsmall-and-down} {
+    .xsonly-valign-middle {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+  .steps {
+    .col {
+      height: 500px;
+    }
+    .innerbg {
+      top: 0;
+      bottom: 0;
+    }
+    .ibg-right {
+      left: -10px;
+      right: 0;
+      &:before {
+        content: '';
+        background-image: url(/assets/images/lp-sem-general-lh-triangle-cutout.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 10px;
+      }
+    }
+    .ibg-left {
+      right: -10px;
+      left: 0;
+      &:after {
+        content: '';
+        background-image: url(/assets/images/lp-sem-general-lh-triangle-cutout-reverse.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+      }
+    }
+    .step-1 {
+      .innerbg {
+        background-image: url(/assets/images/lp-sem-general-lh-step1.jpg);
+      }
+    }
+    .step-2 {
+      .innerbg {
+        background-image: url(/assets/images/lp-sem-general-lh-step2.jpg);
+      }
+    }
+    .step-3 {
+      .innerbg {
+        background-image: url(/assets/images/lp-sem-general-lh-step3.jpg);
+      }
+    }
+  }
+  .testimonialSlider {
+    background-image: url(/assets/images/lp-sem-general-lh-testimonial-background.jpg);
+    .slider .indicators .indicator-item {
+      margin: 0 8px;
+    }
+    @media #{$xsmall-and-down} {
+      .slider {
+        height: 580px!important;
+      }
+      .slides {
+        height: 540px!important;
+      }
+    }
+    img {
+      max-width: 142px;
+    }
+    .white-bg {
+      display: block;
+      background-color: #fff;
+      opacity: 0.93;
+      border-radius: 15px;
+      left: 3rem;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      @media #{$xsmall-and-down} {
+        left: 0;
+      }
+    }
+    .white-triangle {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 2rem 25px 0;
+      border-color: transparent #ffffff transparent transparent;
+      opacity: .93;
+      top: 50%;
+      left: 1.02rem;
+      margin-top: -25px;
+      @media #{$xsmall-and-down} {
+        border-width: 25px 20px 0 20px;
+        border-color: #ffffff transparent transparent transparent;
+        top: 99.9%;
+        left: 3rem;
+        margin-top: 0;
+      }
+    }
+  }
+  .section-3 .card {
+    height: auto;
+    .frequency {
+      margin: .625rem 0 .5rem 0;
+    }
+  }
+  .section-3 {
+    i.small {
+      font-size: 1.6rem;
+      line-height: 2.25rem;
+    }
+    .seafoam {
+      background-color: #379682;
+    }
+    .text-seafoam {
+      color: #379682;
+    }
+    a .text-seafoam {
+      -moz-transition: all .2s;
+      -o-transition: all .2s;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+    }
+    a:hover .text-seafoam,
+    a.active .text-seafoam {
+      color: #2dbdb1;
+    }
+    .features-popup {
+      bottom: 140%;
+      width: 100%;
+      border-radius: 20px;
+      line-height: 1.2;
+      margin-top: -10px;
+      li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: .5rem;
+      }
+      .down-arrow {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: #379682 transparent transparent transparent;
+        position: absolute;
+        top: 100%;
+        right: 40px;
+      }
+    }
+  }
+}

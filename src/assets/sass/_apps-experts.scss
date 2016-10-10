@@ -1,0 +1,201 @@
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .fixed-ratio-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+/*****************************
+* *   Rollups - Shared Styles    * *
+******************************/
+.apps-experts-rollup {
+  .hit-label {
+    min-height: 24px;
+    font-size: .9rem;
+  }
+  .hover-cursor-pointer:hover {
+    cursor: pointer;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .card .card-content {
+    padding-top: 13px;
+  }
+}
+
+/*****************************
+* *   Rollup - Experts    * *
+******************************/
+.experts-rollup {
+  .featuredSlider {
+    .carousel-slider {
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+    .material-icons.large {
+      margin-top: -3rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .spotlight-logo {
+      max-width: 50%;
+    }
+  }
+  .hero {
+    background-image: url(/assets/images/experts-hero.jpg);
+    @media #{$small-and-down} {
+      background-image: url(/assets/images/experts-hero-sm.jpg);      
+    }
+  }
+}
+/*****************************
+* *   Product Details - Shared Styles    * *
+******************************/
+.apps-experts-post {
+	.right-panel p {
+		margin: 0;
+		color: color("grey","lighten-1");
+  }
+  .right-panel .btn {
+      height: 52px;
+      line-height: 52px;
+    }
+
+  .post-body,
+  .post-features {
+    ul {
+      padding-left: 40px;
+      li {
+        list-style: disc outside;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+	.post-gallery {
+    .card-image .material-placeholder{
+      &:before{
+        @include transition(0.33s);
+        content: '';
+        background-color: rgba(0,0,0,0.7);
+        background-image: url(/assets/images/ecommerce-client-gallery-expand-icon.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+      }
+      &:hover:before{
+        cursor: pointer;
+        opacity: 1;
+        background-size: 42px 42px;
+      }
+    }//card-image
+    .card-image.fixed-ratio {
+      @include aspect-ratio(16, 9);
+      overflow: hidden;
+      .material-placeholder {
+        width: 100%;
+      }
+      img, 
+      .img-taller {
+        width: 100%;
+        height: auto;
+      }
+      .img-wider {
+        width: auto;
+        height: 180px;
+        &.active {
+          margin: 0!important;
+        }
+      }
+    }
+    .video-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      z-index: 1;
+      font-size: 90px;
+      margin-top: -45px;
+      margin-left: -45px;
+      opacity:.2;
+    }
+    .video-modal {
+      .modal-header {
+        height: 31px;
+      }
+      .modal-content {
+        padding-top: 0;
+      }
+    }
+    .video-modal .fixed-ratio {
+      @include aspect-ratio(480, 270);
+    }
+  }/* .post-gallery */
+
+  .open-quote-icon {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    position: relative;
+    top: -2px;
+  }
+  .close-quote-icon {
+    font-size: 15px;
+    position: relative;
+    top: -5px;
+  }
+
+  #formmodal {
+    max-width: 600px;
+  }
+}
+.expert-post {
+  #key-services-requested {
+    min-height: 150px;
+  }
+}
+.experts-pricing {
+  .hero {
+    background-image: url(/assets/images/expert-pricing-hero.jpg);
+    @media #{$small-and-down} {
+      background-image: url(/assets/images/expert-pricing-hero-sm.jpg);      
+    }
+  }
+  .expert-seal {
+    background-image: url(/assets/images/expert-pricing-seal.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .elite-expert-seal {
+    background-image: url(/assets/images/expert-pricing-seal-elite.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}

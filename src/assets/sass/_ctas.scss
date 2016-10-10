@@ -1,0 +1,21 @@
+// All CTAS
+.mozu-enterprise-solution{
+	background: url('/assets/images/global-mozu-enterprise-solution-bg.jpg') center top no-repeat;
+  background-size: cover;
+  .btn{
+    background: transparent;
+  	border: 1px solid rgba(255,255,255,0.3);
+    -moz-transition-property: border;
+    -o-transition-property: border;
+    -webkit-transition-property: border;
+    transition-property: border;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    &:hover{
+    	border: 1px solid rgba(255,255,255,1);
+    	opacity: 1 !important;
+    }
+  }
+}

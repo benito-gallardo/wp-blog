@@ -1,0 +1,307 @@
+.mobile-commerce-management{
+	overflow-x: hidden;
+	.hero{
+		background:url(/assets/images/mobile-commerce-management-header-v2.jpg)no-repeat;
+		background-position:50%;
+		background-size:cover;
+		@media #{$small-and-down}{
+			background-position: left;
+		}
+		.wista-video-link {
+	    
+	    padding: 6.5px 12px;
+	    margin: 0 0 0 65px;
+	    display: block;
+	    width: 255px;
+	    line-height: 1;
+	    text-align: left;
+	    font-size: 20px;
+	    @media #{$xsmall-only} {
+	    	width: auto;
+		    margin: 0 auto;
+		    text-align: center;
+	    }
+	    &:hover{
+				opacity: 1 !important;
+				color: #C9C9CA;
+	    }
+	    i{
+	    	margin-right: 7px;
+		    opacity: 0.3;
+		    font-size: 2.7rem;
+	    }
+	  }//wista-video-link
+	}//hero
+
+	.section-1{}//section-1
+	.section-2{
+		@media screen and (min-width:1112px){
+			overflow: hidden;
+			.container {
+				width: 1112px !important;
+				margin: 0 auto!important;
+				.row {
+					margin: 0 !important;
+				}
+			}
+			.img-wrap {
+			    width: 36%;
+			    overflow: hidden;
+			   
+			}
+			.text-wrap {
+			    width: 23%;
+			    margin: 0 2%;
+			    position:relative;
+			    z-index: 1;
+			    span.h5 {
+				    margin-bottom: 0;
+				    position:relative;
+				    &:before{
+					    position:absolute;
+					    content:"";
+						}
+					}
+			}
+			.row-1{
+					.text-wrap{
+						h3 {
+					    margin-bottom: 74px;
+						}
+						p{
+							&:nth-of-type(1) span.h5:before {
+						    background: url(/assets/images/mobile-commerce-management-ico-line-2-01.png)no-repeat;
+						    width: 95px;
+						    height: 30px;
+						    left: -105px;
+						    top: -16px;
+							}//1
+							&:nth-of-type(2){
+							  margin-top: 68px;
+							  span.h5:before {
+							    background: url(/assets/images/mobile-commerce-management-ico-line-2-03_0.png) no-repeat;
+							    width: 95px;
+							    height: 71px;
+							    right: -83px;
+							    top: -59px;
+								}
+							}//2
+							&:nth-of-type(3){
+								margin-top: 41px;
+								span.h5:before {
+									background: url(/assets/images/mobile-commerce-management-ico-line-2-02_0.png) no-repeat;
+							    width: 95px;
+							    height: 62px;
+							    left: -105px;top: -49px;
+								}
+							}//3
+							&:nth-of-type(4) {
+								margin-top: 41px;
+								span.h5:before{
+									background: url(/assets/images/mobile-commerce-management-ico-line-2-04_0.png) no-repeat;
+							    width: 141px;
+							    height: 42px;
+							    right: -79px;
+							    top: 11px;
+								}
+							}//4
+						}//p
+					}//text-wrap
+				}//row-1
+			.row-2{
+				h3 {
+					margin-bottom: 76px;
+				}
+				p {
+					&:nth-of-type(1) span.h5:before {
+						background: url(/assets/images/mobile-commerce-management-ico-line-2-05_0.png) no-repeat;
+				    width: 82px;
+				    height: 70px;
+				    left: -85px;
+				    top: -56px;
+				    background-position: right;
+					}//1
+					&:nth-of-type(2){
+						 margin-top: 41px;
+						span.h5:before {
+						  background: url(/assets/images/mobile-commerce-management-ico-line-2-07_0.png) no-repeat;
+					    width: 94px;
+					    height: 223px;
+					    right: -89px;
+					    top: 11px;
+						}
+					}//2
+					&:nth-of-type(3){
+						margin-top: 45px;
+						span.h5:before {
+							background: url(/assets/images/mobile-commerce-management-ico-line-2-06_0.png) no-repeat;
+					    width: 92px;
+					    height: 76px;
+					    left: -97px;
+					    top: -63px;
+						}
+					}//3
+						&:nth-of-type(4){
+							margin-top: 53px;
+							span.h5:before {
+								background: url(/assets/images/mobile-commerce-management-ico-line-2-08_0.png) no-repeat;
+						    width: 168px;
+						    height: 2px;
+						    right: -151px;
+						    top: 11px;
+							}
+						}//4
+
+				}//p
+			}//row-2
+			.row-3{
+				h3 {
+					margin-bottom:80px;
+				}
+				p {
+					&:nth-of-type(1) span.h5:before {
+						background: url(/assets/images/mobile-commerce-management-ico-line-2-09_0.png) no-repeat;
+				    width: 98px;
+				    height: 28px;
+				    left: -105px;
+				    top: -16px;
+					}//1
+					&:nth-of-type(2){
+						margin-top:38px;
+						span.h5:before {
+							background: url(/assets/images/mobile-commerce-management-ico-line-2-11_0.png) no-repeat;
+					    width: 103px;
+					    height: 46px;
+					    right: -78px;
+					    top: 11px;
+						}
+					}//2
+					&:nth-of-type(3){
+						margin-top:41px;
+						span.h5:before {
+							background: url(/assets/images/mobile-commerce-management-ico-line-2-10_0.png) no-repeat;
+					    width: 103px;
+					    height: 83px;
+					    left: -109px;
+					    top: -67px;
+						}
+					}//3
+						&:nth-of-type(4){
+							margin-top:50px;
+							span.h5:before {
+								background: url(/assets/images/mobile-commerce-management-ico-line-2-12_0.png) no-repeat;
+						    width: 101px;
+						    height: 92px;
+						    right: -90px;
+						    top: -79px;
+							}
+						}//4
+
+				}//p
+			}//row-3
+			.row-4{
+				h3 {
+					margin-bottom:65px
+				}
+				p {
+					&:nth-of-type(1) span.h5:before {
+						background: url(/assets/images/mobile-commerce-management-ico-line-2-15_0.png) no-repeat;
+				    width: 118px;
+				    height: 130px;
+				    right: -104px;
+				    top: 10px;
+					}//1
+					&:nth-of-type(2){
+						margin-top:20px;
+						span.h5:before {
+							background: url(/assets/images/mobile-commerce-management-ico-line-2-16_1.png) no-repeat;
+					    height: 73px;
+					    width: 90px;
+					    right: -81px;
+					    top: -60px;
+						}
+					}//2
+					&:nth-of-type(3){
+						margin-top:50px;
+						span.h5:before {
+							background: url(/assets/images/mobile-commerce-management-ico-line-2-13_0.png) no-repeat;
+					    width: 118px;
+					    height: 130px;
+					    left: -126px;
+					    top: -116px;
+						}
+					}//3
+						&:nth-of-type(4){
+							margin-top:50px;
+							span.h5:before {
+								background: url(/assets/images/mobile-commerce-management-ico-line-2-14_0.png) no-repeat;
+						    width: 212px;
+						    height: 95px;
+						    left: -220px;
+						    top: 12px;
+						    background-position: right;
+							}
+						}//4
+				}//p
+			}//row-4
+		}//@media
+		@media screen and (max-width:1111px){
+    	.row{
+    		text-align: center;
+    		.hide-on-small-and-down{
+    			display:none;
+    		}
+    		.text-wrap {
+			    width: 90%;
+			    text-align: left;
+			    padding-top: 2rem;
+			    padding-bottom: 4rem;
+				    h3.h-22 {
+				    margin-bottom: 3rem;
+				    font-size: 1.6rem;
+						}
+						p {
+					    margin-bottom: 2rem;
+					    &.h-14 {
+    						font-size: 1rem;
+							}
+							 span.h5 {
+    						font-size: 1.2rem;
+							}
+						}//p
+				}//text-wrap
+    	}//row
+		}//@media
+	}//section-2
+	.section-3{
+		.turquoise {
+	    width: 100%;
+	    height:100%;
+	    @media screen and (min-width:993px) {
+	    	height: 70%;
+    		top: 14%;
+	  	}
+		}
+		.h1 {
+			@media screen and (min-width:993px){
+				padding-top:64px;
+			}
+		}
+	}//section-3
+	.section-4{
+		.red {
+	    width: 100%;
+	    height:96.5%;
+	    @media screen and (min-width:993px) {
+	    	height: 70%;
+	    	top: 14%;
+	  	}
+		}
+		.h1 {
+			@media screen and (min-width:993px){
+				padding-top:64px;
+			}
+		}
+	}//section-4
+	.section-5{}//section-5
+}//mobile-commerce-management

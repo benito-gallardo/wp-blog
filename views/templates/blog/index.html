@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- global head -->
+  <% include ./partials/head.html %>
+    <!-- page-specific head -->
+    <title>Stores to Change the World | Volusion</title>
+    <meta name="description" content="Are you looking to change the world? Volusion helps non-profits to build their online presence by offering 10 deserving organizations a free store for life every month.">
+    <!-- og tags -->
+    <meta property="og:title" content="Stores to Change the World | Volusion" />
+    <meta property="og:description" content="Are you looking to change the world? Volusion helps non-profits to build their online presence by offering 10 deserving organizations a free store for life every month." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.volusion.com/nonprofit" />
+    <meta property="og:image" content="https://www.volusion.com/assets/images/volusion-store-builder.jpg" />
+    <link rel="canonical" href="https://www.volusion.com/nonprofit" />
+    <!-- robots -->
+    <meta name="robots" content="index, follow">
+</head>
+
+<body>
+  <% include ./partials/header.html %>
+    <% include ./partials/headerScripts.html %>
+      <div id="main" class="padding-bottom-0">
+        <section class="hero cover text-center padding-top-l padding-bottom-l text-center">
+          <div class="container">
+            <h1><%- post.slug %></h1>
+            <ul>
+              <li>date: <%- post.date %></li>
+              <li>guid : <%- post.guid.rendered %></li>
+              <li>id : <%- post.id %></li>
+              <li>link : <%- post.link %></li>
+              <li>type : <%- post.type %></li>
+              <li>parent : <%- post.parent %></li>
+              <li>title : <%- post.title.rendered %></li>
+              <li>author : <%- post.author %></li>
+              <li>comment_status : <%- post.comment_status %></li>
+              <li>categories : <%- post.categories %></li>
+              <li>tags : <%- post.tags %></li>
+              <li>replies : <%- post.replies %></li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-1 padding-top-l padding-bottom-l">
+          <div class="container">
+            <%- post.content.rendered %>
+          </div>
+        </section>
+      </div>
+      
+      <% include ./partials/footer.html %>
+      <% include ./partials/footerScripts.html %>
+</body>
+
+</html>

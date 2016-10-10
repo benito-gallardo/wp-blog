@@ -1,0 +1,724 @@
+////////////////////////////////////////////////////////////////////////////////
+//Globs/////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.feature-pages {
+	.hgroup-700, .hgroup-700.valign-wrapper {
+    height: 700px;
+
+    @media screen and (max-width:992px){
+
+    	height: 500px;
+    	margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }// hgroup-700
+  .hgroup-700-img{
+  	height:700px;
+  	 @media screen and (max-width:992px){
+  	 	height:auto;
+
+  	 	.valign-middle{
+  	 		@include translate(0,0);
+  	 	}
+  	 }
+  }
+
+ .cta-features-next-design{
+		a span{
+			position: relative;
+	    top: 3px;
+		}
+	} //cta-features-next-design
+	 .wrap-templates {
+		overflow:hidden;
+		max-height:700px;
+		@media screen and (max-width:992px){
+			width: 108.4%;
+	    left: -4.1%;
+	    position: relative;
+	    max-height: 600px;
+		}
+ 	.templates {
+		position:relative;
+		left:0;
+		top:0;
+		-webkit-transition:top .3s linear;
+		-moz-transition:top .3s linear;
+		-ms-transition:top .3s linear;
+		-o-transition:top .3s linear;
+		transition:top .3s linear;
+
+		&:first-child {
+			margin-left:0;
+		}
+
+		img {
+			display:block;
+		}
+
+		&.first, &.last {
+			position:absolute;
+			left:0;
+		}
+
+		&.first {
+			bottom:100%;
+		}
+
+		.last {
+			top:100%;
+		}
+	}//templates
+}//wrap-templates
+}//feature-pages
+////////////////////////////////////////////////////////////////////////////////
+//Features Menu/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+	.features-page-menu {
+		height: auto;
+    background: none;
+    line-height: 1;
+		.mobile-feautres-button {
+			i, span {
+				vertical-align: middle;
+			}
+		}
+		a {
+			color:#252526;
+			transition: 0s;
+			&:hover {
+				color:#fe5f55 !important;
+			}
+		}
+		.col {
+	    position: relative;
+		} //col
+		.icon.db {
+	    width: 36px;
+	    height: 36px;
+	    background: url(/assets/images/best_ecommerce_software_features_features-icon-sprite.png) no-repeat; 
+		} //icon.db
+		.store-builder{
+			.icon.db {
+				background-position: 0 -36px;
+			}
+			&:hover .icon.db,
+			.ecommerce-website-builder.active & .icon.db, 
+			.ecommerce-website-builder.active & {
+				background-position: -36px -36px;
+				color:#fe5f55 !important;	
+			}
+		}
+		.design{
+			.icon.db {
+				background-position: 0 -72px;
+			}
+			&:hover .icon.db,
+			.ecommerce-web-design.active & .icon.db, 
+			.ecommerce-web-design.active & {
+				background-position: -36px -72px;
+				color:#fe5f55 !important;			
+			}
+		}
+		.marketing{
+			.icon.db {
+				background-position: 0 -108px;
+			}
+			&:hover .icon.db,
+			.ecommerce-marketing.active & .icon.db, 
+			.ecommerce-marketing.active & {
+				background-position: -36px -108px;
+				color:#fe5f55 !important;	
+			}
+		}
+		.ecommerce{
+			.icon.db {
+				background-position: 0 -144px;
+			}
+			&:hover .icon.db,
+			.ecommerce-order-management.active & .icon.db, 
+			.ecommerce-order-management.active & {
+				background-position: -36px -144px;
+				color:#fe5f55 !important;		
+			}
+		}
+		.secure-hosting{
+			.icon.db {
+				background-position: 0 -180px;
+			}
+			&:hover .icon.db,
+			.best-ecommerce-website-hosting.active & .icon.db, 
+			.best-ecommerce-website-hosting.active & {
+				background-position: -36px -180px;	
+				color:#fe5f55 !important;		
+			}
+		}
+		.all-features{
+			.icon.db {
+				background-position: 0 -216px;
+			}
+			&:hover .icon.db, 
+			.best-ecommerce-software-features.active & .icon.db, 
+			.best-ecommerce-software-features.active &  {
+				background-position: -36px -216px;
+				color:#fe5f55 !important;	
+			}
+		}
+		@media screen and (min-width:993px){
+			.col {
+		    &:after {
+			    content: " ";
+			    width: 1px;
+			    background: #dfdfdf;
+			    position: absolute;
+			    right: -.5px;
+			    top: 30%;
+			    height: 65px;
+				} //col:after
+				&:last-of-type:after {
+		    	display: none;
+				}
+			} //col
+			.icon.db {
+		    margin: 0 auto;
+			} //icon.db
+		}
+		@media only screen and (max-width: 992px){
+			.container{
+				width:100%;
+			}//container
+		 	.row {
+		    display: none;
+		    margin:1rem 0 0;
+		    &.active{
+		    	margin-bottom: -1rem !important;
+		    }
+			}//row
+			.col{
+				&.xs12.m2 {
+				    border-top: 1px solid #f3f3f5;
+				    padding: .75rem;
+				}
+				.icon.db {
+			    display: inline-block !important;
+			    vertical-align: middle;
+				} //icon.
+				p{
+					display: inline-block !important;
+			    vertical-align: middle;
+			     padding: 0 !important;
+	    		line-height: 1;
+	    		span.h-14 {
+					    margin: 0;
+					}//h-14
+				}
+			}//col
+			
+		}
+	} // features-page-menu
+
+	
+////////////////////////////////////////////////////////////////////////////////
+// Best Ecommerce Software Features ////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.best-ecommerce-software-features {
+	#main{
+		padding-bottom:0;
+		p {
+			a{
+				font-weight: bold;
+			}
+		}
+	}
+	.hgroup{
+		background: url(/assets/images/best_ecommerce_software_features_hero_bg-lg.jpg) no-repeat;
+		background-size: cover;
+		
+		@media #{$medium-and-up}{
+			max-height: 350px;
+			background-position: 48% top;
+		}
+		@media #{$small-and-down}{
+			background: url(/assets/images/best_ecommerce_software_features_hero_bg-sm.jpg) no-repeat;
+			background-size: cover;
+		}
+	}
+	
+	
+}//best-ecommerce-software-features
+////////////////////////////////////////////////////////////////////////////////
+// Store Builder ///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.ecommerce-website-builder{
+	p a{
+		font-weight: bold;
+	}
+	.hgroup-700, .hgroup-700.valign-wrapper{
+		@media screen and (max-width:992px){
+    	height: 500px;
+    	margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+	}
+	.section-1{
+		background:url(/assets/images/ecommerce-website-builder-bike-bg.jpg)no-repeat center top;
+		background-size:cover;
+
+		.mac-desktop {
+			width: 759px;
+	    height: 713px;
+	    background: url(/assets/images/ecommerce-website-builder-mac-desktop.png) center 0 no-repeat;
+	    background-size: cover;
+	    padding: 33px 0 0;
+	    margin-right: -47px;
+	    float: right;
+	    top: 136px;
+	    position: relative;
+	    margin-bottom: -12px;
+
+	    .frame-content {
+		    border-radius: 0px;
+		    height: 385px;
+		    margin: 0 auto;
+		    max-width: 690px;
+		    overflow-x: hidden;
+		    overflow-y: scroll;
+
+		    img {
+		    	width:100%;
+		    }
+			} //frame content
+		} //mac desktop
+		
+		.mac-overlay-wrap {
+	    width: 1px;
+	    height: 1px;
+	    overflow: visible;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+
+	    .mac-overlay {
+		    // background: url(../images/features-tour/mac-overlay.png) center 0 no-repeat;
+		    width: 402px;
+		    height: 466px;
+		    pointer-events: none;
+		    float: right;
+			} //mac overlay
+		} // mac-overlay-wrap
+	 	
+		@media screen and (max-width: 1600px) {
+			.mac-desktop {
+			  background: url(/assets/images/ecommerce-website-builder-mac-desktop.png) no-repeat center top;
+		    background-size: 100%;
+		    height: 540px;
+		    margin-right: -80px;
+		    width: 600px;
+		    .frame-content {
+				  height: 304px;
+				  width: 552px;
+				}
+			}
+			.mac-overlay {
+			  // background: url("../images/features-tour/mac-overlay.png") no-repeat center 0;
+			  background-size: 100%;
+			  width: 50%;
+			}
+		}
+		@media screen and (max-width: 1200px) {
+			.mac-desktop {
+        height: 485px;
+        padding: 20px 0 0;
+        margin-right:0;
+        width: 540px;
+        .frame-content {
+	        height: 282px;
+	        width: 496px;
+	        overflow: hidden;
+	  		}
+  		}
+		}
+		@media screen and (max-width: 992px) {
+			.col.m8 {
+      	width: 100%;
+  		}
+
+			.mac-desktop {
+        margin: 30px auto 0;
+        float: none;
+        top: 20px;
+  		}
+		}
+		@media screen and (max-width:620px){
+		   .mac-desktop {
+		    width: 320px;
+		    height: 320px;
+		    margin: -10px auto 0;
+		    .frame-content {
+			    height: 152px;
+			    width: 280px;
+			  }
+			}
+		}
+		@media screen and (max-width:450px){
+			.col.m8 {
+    		padding: 0;
+			}
+			.mac-desktop {
+		    width: 310px;
+		    height: 310px;
+		    margin: -10px auto 0;
+			}
+		}
+	} //section-1
+	.try-volusion-free-for-14-days {
+		position:relative;
+		z-index:2;
+	} //try volusion free for 14 days
+	.section-2 {
+		@media screen and (min-width:993px){
+			.col.m7 {
+		    padding-left: 0;
+		    line-height: 0;
+			}
+			.col.m5 {
+			   padding-top: 15%;
+			}
+		}
+	} //section-2
+	.section-3 {
+		background:url(/assets/images/ecommerce-website-builder-draft-bg.jpg)no-repeat center top;
+		background-size:cover;
+
+		@media #{$medium-and-up}{
+			background:url(/assets/images/ecommerce-website-builder-draft-bg-lg.jpg)no-repeat center top;
+			background-size:cover;
+			background-attachment: fixed;
+			background-position:right 70px;
+		}
+	} //section-3
+	.section-4 {
+		background: #F6F6F6;
+
+		@media screen and (min-width:993px){
+			.col.m7 {
+		    padding-left: 0;
+		    line-height: 0;
+		    margin-left: -2%;
+
+			}
+			.col.m5 {
+			   padding-top: 15%;
+			}
+		}
+	} //section-4
+	.section-5 {
+		background:url(/assets/images/ecommerce-website-builder-watch.jpg)no-repeat center top;
+		background-size:cover;
+	} //section-5
+	.section-6 {
+		blockquote {
+	    max-width: 930px;
+	    margin: 0 auto;
+	    text-align: left;
+	    position: relative;
+	    @media screen and (max-width:992px){
+	    	max-width:100%;
+	    }
+			@media screen and (max-width:620px){
+				&.padding-l.padding-top-s.padding-bottom-s {
+    			padding: 0 !important;
+				}
+			}
+	    &:before, &:after{
+		    content: "";
+		    background: url(/assets/images/best_ecommerce_software_features_features-icon-sprite.png)no-repeat;
+		    width: 68px;
+		    height: 50px;
+		    position: absolute;
+
+		    @media screen and (max-width:992px){
+        	display:none;
+    		}
+			}
+			&:before {
+		    background-position: 0px -387px;
+		    left: -4%;
+		    top: 15px;
+			}
+			&:after{
+		    background-position: 0px -440px;
+		    right: -2.5%;
+		    bottom:20px;
+			}
+		} // blockquote
+		.customer-info p, .customer-info img {
+    	vertical-align: middle;
+    	line-height: 1.3;
+		}
+	} //section-6
+}	//ecommerce-website-builder
+////////////////////////////////////////////////////////////////////////////////
+//Design////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.ecommerce-web-design {
+	p a{
+		font-weight: bold;
+	}
+	.section-1{
+		background: url(/assets/images/ecommerce-web-design-hgroup-bg.jpg)no-repeat;
+		background-size:cover;
+		
+		@media screen and (min-width:993px){
+		  background-attachment: fixed;
+	  }
+	  @media #{$small-and-down}{
+			background: url(/assets/images/ecommerce-web-design-hgroup-bg-sm.jpg)no-repeat;
+			background-size: cover;
+	  }
+	}//section-1
+	.section-2{
+		overflow:hidden;
+		.wrap-templates{
+			@media screen and (max-width:992px){
+				max-height: 700px;
+			}
+		}//wrap-templates
+	}//section-2
+	.section-3{}//section-3
+	.section-4{
+		background: url(/assets/images/ecommerce-web-design-phone-bg.jpg)no-repeat center;
+		background-size:cover;
+		@media #{$small-and-down}{
+			background: url(/assets/images/ecommerce-web-design-phone-bg-sm.jpg)no-repeat center;
+			background-size: cover;
+	  }
+	}//section-4
+	.section-5{
+		background: url(/assets/images/ecommerce-web-design-beautiful-designs-bg-2.jpg)no-repeat bottom;
+		background-size:cover;
+		@media #{$small-and-down}{
+			background: url(/assets/images/ecommerce-web-design-beautiful-designs-bg-2-sm.jpg)no-repeat bottom;
+			background-size: cover;
+	  }
+		img{
+			@media screen and (min-width:1201px){
+    		left: -129px;
+			}
+			@media screen and (max-width:1200px) and (min-width:993px){
+    		left: -40px
+			}
+		}
+	}//section-5
+} //ecommerce-web-design
+
+////////////////////////////////////////////////////////////////////////////////
+//Marketing/////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.ecommerce-marketing {
+	p {
+		a {
+			font-weight: bold; 
+		}
+	}
+	.section-1{
+		background: url(/assets/images/ecommerce-marketing-top-result.jpg)no-repeat;
+		background-size:cover;
+		
+		.responsive-img{
+			@media #{$medium-and-up}{
+				max-width:90%;
+			}
+		}
+	}//section-1
+	.section-2{
+		overflow: hidden;
+		img.responsive-img {
+			@media screen and (min-width:993px){
+				max-width: 136%;
+			}
+		}
+	}//section-2
+	.section-3 {
+		background: url(/assets/images/ecommerce-marketing-rating-background.jpg)no-repeat;
+		background-size:cover;
+		background-attachment: fixed;
+
+		.row.margin-bottom-0 {
+		   position: relative;
+		}
+			.col.m8.pull-m4 {
+				@media screen and(min-width:993px){
+	    		position: absolute;
+	    		bottom: 15%;
+	  	}
+		}
+	 	.ratings-img {
+	    position: relative;
+	    left: -28px;
+		}
+		.ratings-box {
+			position: relative;
+			@media screen and (min-width:993px) {
+		   width: 70%;
+			}
+		  .material-icons {
+		    position:absolute;
+		    font-size:3rem;
+		    @include rotate(180deg);
+		    top: 50%;
+		    left: -31px;
+		    margin-top: -1.5rem;
+			}
+		}//.ratings-box
+	}//section-3
+	.section-4{
+		overflow: hidden;
+		img.responsive-img {
+			@media screen and (min-width:1201px) {
+				max-width: 114%;
+			}
+			@media #{$medium-and-up}{
+				min-width: 660px;
+			}
+		}
+		.col.m4 {
+			@media screen and (min-width:1600px){
+			   padding-top: 12%;
+			}
+		}
+		.col.xs12.m8 {
+			@media #{$medium-and-up}{
+    		padding-right: 0;
+			}
+		}
+	}//section-4
+	.section-5{
+		background: url(/assets/images/ecommerce-marketing-email-purchage-bg.jpg)no-repeat;
+		background-size:cover;
+		background-position:center;
+		@media screen and (min-width:993px){
+		  background-attachment: fixed;
+	  }
+	}//section-5
+} //ecommerce-marketing
+////////////////////////////////////////////////////////////////////////////////
+//Ecommerce/////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.ecommerce-order-management {
+	p a{
+		font-weight: bold;
+	}
+	.hgroup.hgroup-s{
+		@media screen and (max-width:470px){
+			height:600px;
+		}
+	}
+	.section-1{
+		background: url(/assets/images/ecommerce-order-management-hgroup-bg.jpg)no-repeat;
+		background-size:cover;
+		background-position: center top;
+		@media #{$medium-and-up}{
+			
+		}
+		
+	}//section-1
+	.section-2{}//section-2
+	.section-3{
+		background-image: url(/assets/images/ecommerce-order-management-devices-bg.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position: center top;
+		@media #{$small-and-down}{
+			background-image: url(/assets/images/ecommerce-order-management-devices-bg-sm.jpg);
+		}
+		
+	}//section-3
+	.section-4{
+		background: url(/assets/images/ecommerce-order-management-easy-payment.jpg)no-repeat;
+		background-size:cover;
+		
+		.credit-cards {
+			> span {
+		    background: url(/assets/images/best_ecommerce_software_features_features-icon-sprite.png) no-repeat;
+		    width: 56px;
+		    height: 38px;
+		    margin: 0.5% 0.5% 0.5rem;
+
+		    &:first-of-type{
+				  background-position: -88px 0px;
+				}
+				&:nth-child(2){
+				   background-position: -88px -40px;
+				}
+				&:nth-child(3){
+				  background-position: -88px -81px;
+				}
+				&:nth-child(4){
+				  background-position: -88px -122px;
+				}
+				&:nth-child(5){
+						background-position: -88px -163px;
+				}
+			}//span
+		}//credit-cards
+	}//section-4
+	.section-5{
+		@media screen and (max-width:992px){
+			overflow: hidden;
+		}
+		.wrap-templates{
+			@media screen and (max-width:992px){
+				max-height: 1000%;
+			}
+		}//wrap-templates
+		.templates{
+			@media screen and (max-width:992px){
+	    	top: 0 !important;
+			}
+		}//templates
+	}//section-5
+	.section-6{}//section-6
+ 
+
+
+} //ecommerce-order-management
+////////////////////////////////////////////////////////////////////////////////
+//Secure Hosting////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+.best-ecommerce-website-hosting {
+
+		p{
+			a{
+				font-weight: bold;
+			}
+		}
+
+	.section-1{
+		background: url('/assets/images/best-ecommerce-website-hosting-data-security-m.jpg') no-repeat;
+		background-size:cover;
+		 @media screen and (min-width: $medium-screen-min) {
+            background: url('/assets/images/best-ecommerce-website-hosting-data-security.jpg') center no-repeat;
+            background-size: cover;
+        }
+	}//section-1
+	.section-2{
+		background: url('/assets/images/best-ecommerce-website-hosting-certified-foundation.jpg')center 0 no-repeat;
+		background-size:cover;
+		background-position: 75% 0;
+		
+	}//section-2
+	.section-3{}//section-3
+	.section-4{
+		background-image: url('/assets/images/best-ecommerce-website-hosting-guarantee-bg.jpg')
+	}//section-4
+	.section-5{
+		background-image: url('/assets/images/best-ecommerce-website-hosting-site-performance-bg.jpg');
+		@media #{$small-and-down}{
+			background-image: url('/assets/images/best-ecommerce-website-hosting-site-performance-bg-sm.jpg');
+		}
+
+	}//section-5
+	.section-6{}//section-6
+
+} //best-ecommerce-website-hosting

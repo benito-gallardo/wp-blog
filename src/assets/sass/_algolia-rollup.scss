@@ -1,0 +1,397 @@
+.algolia-rollup {
+  #search-input {
+    i.prefix,
+    .clear-search {
+      margin-top: -12px;
+    }
+    input {
+      box-sizing: border-box;
+    }
+    input:not([type]):focus:not([readonly]),
+    input[type=text]:focus:not([readonly]),
+    input[type=password]:focus:not([readonly]),
+    input[type=email]:focus:not([readonly]),
+    input[type=url]:focus:not([readonly]),
+    input[type=time]:focus:not([readonly]),
+    input[type=date]:focus:not([readonly]),
+    input[type=datetime-local]:focus:not([readonly]),
+    input[type=tel]:focus:not([readonly]),
+    input[type=number]:focus:not([readonly]),
+    input[type=search]:focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly]) {
+      border-bottom: 0px;
+      box-shadow: none;
+    }
+  }
+  #facets {
+    li.refined {
+      color: color("teal","base");
+      font-weight: bold;
+      label {
+        color: color("teal","base");
+        font-weight: bold;
+      }
+    }
+  }
+  #sort-by {
+    .dropdown-content li>a {
+      color: color("grey","base");
+    }
+  }
+  #hits {
+    em {
+      font-style: normal;
+      text-decoration: none;
+      background: color("turquoise","lighten-2");
+    }
+    .hit {
+      .hit-title {
+        line-height: 1.2;
+      }
+    }
+  }
+
+  @media #{$small-and-down} {
+    /* ************************** */
+    /* facet animation & functionality */
+    /* ************************** */
+    .filter-trigger {
+      &:hover {
+        cursor: pointer;
+      }
+      &.active {
+        color: $black;
+      }
+      &.is-refined {
+        color: color("teal", "base");
+      }
+      .open-filters {
+        line-height: 54px;
+      }
+      .close-filters {
+        display: none;
+        line-height: 54px;
+        font-weight: normal;
+      }
+      i {
+        margin-right: 5px;
+      }
+      &.active {
+        .close-filters {
+          display: inline;
+        }
+        .open-filters {
+          display: none;
+        }
+      }
+    }
+    .clear-facets {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+
+    //show and hide facet titles
+    #facets {
+      &.initialized {
+        .page-header {
+          display: block;
+          -moz-transition:  max-height .25s;
+          -o-transition: max-height .25s;
+          -webkit-transition: max-height .25s;
+          transition: max-height .25s;
+          max-height: 0;
+          overflow: hidden;
+          padding-top: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+      &.active {
+        .page-header {
+          display: block;
+          max-height: 999px;
+          -moz-transition:  max-height 1s;
+          -o-transition: max-height 1s;
+          -webkit-transition: max-height 1s;
+          transition: max-height 1s;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-top: 1px solid $collection-border-color;
+          border-bottom: 1px solid $collection-border-color;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .facet {
+          border-bottom: 1px solid $collection-border-color;
+        }
+      }
+    }
+    //show and hide checkboxes
+    #facets {
+      &.initialized {
+        ul {
+          display: block;
+          -moz-transition:  max-height .25s;
+          -o-transition: max-height .25s;
+          -webkit-transition: max-height .25s;
+          transition: max-height .25s;
+          max-height: 0;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+          border:none;
+        }
+      }
+      @for $i from 1 through 8 {
+        &.active-child-#{$i} .facet ul{
+          -moz-transition:  max-height 1s;
+          -o-transition: max-height 1s;
+          -webkit-transition: max-height 1s;
+          transition: max-height 1s;
+        }
+      }
+      @for $i from 1 through 8 {
+        &.active-child-#{$i} .facet:nth-child(#{$i}) ul{
+          max-height: 999px;
+          //border: 1px solid $collection-border-color;
+        }
+      }
+    } //#facets
+
+    /* ****** */
+    /* styles */
+    /* ****** */
+    .resource-grid {
+      padding-top: 0!important;
+    }
+    .sm-spread-container {
+      width: 100%;
+      .row {
+        margin-left: auto;
+        margin-right: auto;
+        .col.right-col {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+    .sm-container {
+      width: 85%;
+      margin: 0 auto;
+      max-width: 1400px;
+      padding-top: 2rem;
+    }
+    .facet-panel {
+      padding-left: 0!important;
+      padding-right: 0!important;
+      background-color: color("grey","lighten-3");
+      margin-bottom: 2rem;
+    }
+    .clear-facets {
+      -moz-transition: max-height 1s;
+      -o-transition: max-height 1s;
+      -webkit-transition: max-height 1s;
+      transition: max-height 1s;
+      max-height: 999px;
+      width: 100%;
+      padding: 10px 20px;
+      border-bottom: 1px solid #e0e0e0;
+      border-top: 1px solid #e0e0e0;
+      //background-color: #eeeeee;
+    }
+    #facets {
+      margin-top: 0;
+      .facet {
+        margin-top: 0;
+      }
+      ul {
+        margin: $element-top-margin 0 $element-bottom-margin 0;
+        border-radius: 2px;
+        overflow: hidden;
+        position: relative;
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 5px;
+          background: rgb(181,183,188); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(181,183,188,1) 0%, rgba(221,222,224,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top,  rgba(181,183,188,1) 0%,rgba(221,222,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom,  rgba(181,183,188,1) 0%,rgba(221,222,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b7bc', endColorstr='#dddee0',GradientType=0 ); /* IE6-9 */
+        }
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 5px;
+          background: rgb(221,222,224); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(221,222,224,1) 0%, rgba(181,183,188,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top,  rgba(221,222,224,1) 0%,rgba(181,183,188,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom,  rgba(221,222,224,1) 0%,rgba(181,183,188,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddee0', endColorstr='#b5b7bc',GradientType=0 ); /* IE6-9 */
+        }
+
+      }//ul
+
+      // facetable attributes
+      li {
+        //background-color: $collection-bg-color;
+        line-height: 1.5rem;
+        padding: 10px 20px;
+        margin: 0;
+        background-color: color("grey", "lighten-2");
+        //border-bottom: 1px solid $collection-border-color;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &.active {
+          background-color: $collection-active-bg-color;
+          color: $collection-active-color;
+
+          .secondary-content {
+            color: #fff;
+          }
+        }
+      }//li
+
+      //title element
+      .page-header {
+        width: 100%;
+        //background-color: $collection-bg-color;
+        //background-color: #eeeeee;
+        padding: 10px 20px;
+        @include transition(.25s);
+        color: $secondary-color;
+        &.is-refined:after {
+          content: '';
+          height: 10px;
+          width:10px;
+          display: inline-block;
+          border-radius: 10px;
+          background-color: color("teal", "base");
+          margin-left: 10px;
+        }
+        h4, p {
+          display: inline-block;
+        }
+      }//.page-header
+
+      //title element active state
+      @for $i from 1 through 8 {
+        &.active-child-#{$i} .facet:nth-child(#{$i}) .page-header{
+          //background-color: #fff;
+        }
+      }//.for
+    }//#facets
+
+    //checbox overrides 
+    [type="checkbox"].filled-in-box:not(:checked)+label:after {
+      border: 2px solid color("grey", "base");
+    }
+    [type="checkbox"].filled-in-box+label {
+      color: color("grey", "base"); 
+    }
+
+  }//small and down
+
+}//.algolia-rollup
+
+/***************
+   Checkboxes
+***************/
+// Filled in Style
+[type="checkbox"].filled-in-box {
+  + label {
+    color: color("grey", "lighten-1");
+    font-weight: 300;
+  }
+  // General
+  + label:after {
+    border-radius: 2px;
+  }
+  + label:before,
+  + label:after {
+    content: '';
+    left: 0;
+    position: absolute;
+    /* .1s delay is for check animation */
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1;
+  }
+
+  // Unchecked style
+  &:not(:checked) + label:before {
+    width: 0;
+     height: 0;
+     border: 3px solid transparent;
+     left: 6px;
+     top: 10px;
+
+     -webkit-transform: none;
+             transform: none;
+     -webkit-transform-origin: none;
+             transform-origin: none;
+  }
+
+  &:not(:checked) + label:after {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid color("grey", "lighten-2");
+    top: 3px;
+    z-index: 0;
+  }
+
+  // Checked style
+  &:checked {
+    + label:before {
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      border-top: 2px solid $input-bg-color;
+      border-left: 2px solid $input-bg-color;
+      border-right: 2px solid $input-bg-color;
+      border-bottom: 2px solid $input-bg-color;
+      -webkit-transform: none;
+      transform: none;
+
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+
+    + label:after {
+      top: 2px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid color("teal", "base");
+      background-color: color("teal", "base");
+      z-index: 0;
+    }
+  }
+  // Disabled style
+  &:disabled:not(:checked) + label:before {
+    background-color: transparent;
+    border: 2px solid transparent;
+  }
+
+  &:disabled:not(:checked) + label:after {
+    border-color: transparent;
+    background-color: $input-disabled-solid-color;
+  }
+
+  &:disabled:checked + label:before {
+    background-color: transparent;
+  }
+
+  &:disabled:checked + label:after {
+    background-color: $input-disabled-solid-color;
+    border-color: $input-disabled-solid-color;
+  }
+}

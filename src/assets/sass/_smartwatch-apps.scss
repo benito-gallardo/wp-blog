@@ -1,0 +1,130 @@
+
+
+.smartwatch-apps{
+	p a{
+		font-weight: bold;
+	}
+#main{padding-bottom:0;}
+	.hero {
+		background:url(/assets/images/smartwatch-apps-hero.jpg)no-repeat;
+		background-size:cover;
+		@media screen and (min-width:993px){
+			background-position: top center;
+	  }
+	  @media #{$small-and-down}{
+	  	background:url(/assets/images/smartwatch-apps-hero-sm.jpg)no-repeat;
+		background-size:cover;
+	  }
+	  .wista-video-link {
+	    
+	    padding: 6.5px 12px;
+	    margin: 0 auto;
+	    display: block;
+	    width: 255px;
+	    line-height: 1;
+	    text-align: left;
+	    font-size: 20px;
+	    @media #{$xsmall-only} {
+	    	// width:100%;
+	    }
+	    &:hover{
+				opacity: 1 !important;
+				color: #C9C9CA;
+	    }
+	    i{
+	    	margin-right: 7px;
+		    opacity: 0.3;
+		    font-size: 2.7rem;
+	    }
+	  }
+	}//hero
+	.section-1 {
+		.col:first-of-type {
+				padding-right:50px;
+				max-height: 390px;
+				@media screen and (max-width:992px){
+					max-width:430px;
+					float:none;
+					margin: 0 auto;
+					padding-right:0.75rem;
+				}
+			}
+		.watch-slide-wrap {
+			position: relative;
+	    padding-bottom: 100%;
+			img {
+	    	left:0;
+	    	top: 0;
+				width:100%;
+				height:100%;
+	    	-webkit-animation-name: smartwatch-apps-fade;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-duration: 12s;
+		    animation-name: smartwatch-apps-fade;
+		    animation-iteration-count: infinite;
+		    animation-duration: 12s;
+		    
+		    
+		    @media #{$large-and-up}{
+		    	max-width: 390px;
+		    max-height: 390px;
+					right: 10%;
+					left:auto;
+		    }
+		     &:nth-child(1) {
+				}
+				&:nth-child(2) {
+	    	-webkit-animation-delay: -8s;
+				}
+				&:nth-child(3) {
+	   		 -webkit-animation-delay: -4s;   
+				}
+			}
+			@-webkit-keyframes smartwatch-apps-fade {
+			    0% {opacity: 0;}
+			    20% {opacity: 1;}
+			    33% {opacity: 1;}
+			    53% {opacity: 0;}
+			    100% {opacity: 0;}
+			}
+			@keyframes smartwatch-apps-fade {
+			    0% {opacity: 0;}
+			    20% {opacity: 1;}
+			    33% {opacity: 1;}
+			    53% {opacity: 0;}
+			    100% {opacity: 0;}
+			}
+		}//watch-slide-wrap
+	}//section-1
+	.section-2 {
+		.red {
+	    width: 100%;
+	    height:100%;
+	    @media screen and (min-width:993px) {
+	    	height: 70%;
+    		top: 14%;
+	  	}
+		}
+		h3 {
+			@media screen and (min-width:993px){
+				padding-top:75px;
+			}
+		}
+	}//section-2
+	.section-3 {
+		.turquoise {
+	    width: 100%;
+	    height:100%;
+	    @media screen and (min-width:993px) {
+	    	height: 65%;
+	    	top: 15%;
+	  	}
+		}
+		h3 {
+			@media screen and (min-width:993px){
+				padding-top:96px;
+			}
+		}
+	}//section-3
+}//smartwatch-apps
+

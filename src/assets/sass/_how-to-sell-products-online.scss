@@ -1,0 +1,237 @@
+.how-to-sell-products-online {
+  #first-time-seller a, #selling-in-store a, #ebay-etsy-amazon a{
+    font-weight:bold;
+  }
+  .hero {
+    background: url('/assets/images/how-to-sell-products-online-sell-online.jpg') center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    @media #{$xsmall-only} {
+      height:200px;
+      h1 {
+        font-size:2em;
+      }
+      h2 {
+        font-size:1em;
+      }
+    }
+  }
+  .subnav {
+    height:150px;
+    max-width: 1200px;
+    margin:auto;
+    .tabs {
+      height:150px;
+      margin:0;
+      .indicator {
+        display: none;
+      }
+      .tab {
+        height:150px;
+        width:100%;
+        letter-spacing:normal;
+        a {
+          line-height: 18px;
+          text-transform: initial;
+          overflow:visible;
+          white-space: normal;
+          &:hover {
+            color:$vol-turquoise;
+          }
+          i {
+            font-size: 2.25em;
+            padding-top: 15px;
+            padding-bottom:10px;
+          }
+          strong {
+            font-size:1.0625em;
+          }
+          p {
+            font-size: 0.96em;
+            margin-top:0.25em;
+          }
+        }
+        .active, .active:hover {
+          color:$vol-red!important;
+
+        }
+      }
+      @media #{$xsmall-only} {
+        padding-top:25px;
+        display: block;
+        overflow-x: visible;
+        overflow-y: visible;
+        margin: auto;
+      }
+    }
+    .nav-divider {
+      &:after {
+        content: "";
+        border-left: 1px solid #dfdfdf;
+        position: absolute;
+        height: 50%;
+        width: 1px;
+        top: 25%;
+        margin-left: 160px;
+        @media screen and (max-width: $small-screen-max) {
+          border-left:none;
+        }
+      }
+    }
+    @media screen and (max-width: $small-screen-max) {
+      max-width:100%;
+    }
+    @media screen and (max-width: $xsmall-screen-max) {
+      height:auto;
+    }
+  }
+  .counter {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    background-color: #4ad4c9;
+    border-radius: 50%;
+    font-size: 3.18em;
+    color: #ffffff;
+  }
+  .essentials {
+    padding:0 50px;
+    img {
+      @media screen and (max-width: $xsmall-screen-max) {
+        width:100%;
+      }
+    }
+    @media screen and (max-width: $small-screen-max) {
+      padding-top:50px;
+    }
+    @media screen and (max-width: $xsmall-screen-max) {
+      padding-top:30px;
+    }
+  }
+  img {
+    @media #{$xsmall-only} {
+      margin-top:25px;
+      overflow: visible;
+    }
+  }
+  .online-business {
+    @media screen and (max-width: $xsmall-screen-max) {
+      padding-top:0!important;
+      h3 {
+        margin-bottom:0;
+        font-size:2.5em;
+      }
+    }
+  }
+
+  /* Article 1 */
+  .what-to-sell {
+    background: url('/assets/images/how-to-sell-products-online-sell-items.jpg') no-repeat;
+    background-position:center 0%;
+    background-size:cover;
+    overflow: hidden;
+    padding-top:230px;
+    img {
+      @media screen and (max-width: $xsmall-screen-max) {
+        width:100%;
+      }
+    }
+    @media screen and (max-width: $small-screen-max) {
+      background:none;
+      padding:50px;
+      height:auto;
+      padding-bottom:0;
+    }
+    @media screen and (max-width: $xsmall-screen-max) {
+      padding-top:10px;
+    }
+  }
+  
+
+  .build-store {
+    i {
+      font-size:3em;
+      @media screen and (max-width: $xsmall-screen-max) {
+        margin-top:20px;
+      }
+    }
+    .head-icon {
+      div {
+        @media screen and (max-width: $xsmall-screen-max) {
+          text-align:center!important;
+        }
+      }
+    }
+  }
+  .advertise-and-market {
+    background: url("/assets/images/how-to-sell-products-online-doggy.png") no-repeat;
+    overflow: hidden;
+    background-position: bottom;
+    background-size: 100%;
+    padding-bottom: 75px;
+    @media screen and (max-width: $small-screen-max) {
+      background:none;
+      padding:50px;
+    }
+  }
+
+  /* Article 2 */
+  .manage-inventory {
+    @media screen and (max-width: $xsmall-screen-max) {
+      padding-top:10px!important;
+    }
+  }
+  .privacy-and-security {
+    img {
+      width:100%;
+      @media #{$medium-and-up} {
+        width:65%;
+      }
+    }
+  }
+  .design-and-market {
+    background: url("/assets/images/how-to-sell-products-online-boat.png") no-repeat right bottom;
+    padding-top: 380px;
+    margin-top: -100px;
+    background-size: 100% 100%;
+    padding-bottom: 68px;
+    img {
+      max-width: 100%;
+      left: 20%;
+      bottom: -205px;
+      @media screen and (max-width: $small-screen-max) {
+        left:0;
+        bottom:0;
+      }
+    }
+    @media screen and (max-width: $small-screen-max) {
+      background:none;
+      padding:50px 0 0 0;
+      margin-top:0;
+    }
+  }
+
+  /* Article 3 */
+  .switch-online {
+    @media screen and (max-width: $xsmall-screen-max) {
+      padding-top:10px!important;
+      margin-top:0!important;
+    }
+  }
+  .promote-and-market {
+    background: url("/assets/images/how-to-sell-products-online-section-five-background.jpg") no-repeat center bottom;
+    background-size: 100%;
+    padding-top: 106px;
+    img {
+    width:110%;
+      @media #{$medium-and-down} {
+        width:100%;
+      }
+    }
+    @media screen and (max-width: $small-screen-max) {
+      background:none;
+      padding:80px 0 0 0;
+      margin-top:0;
+    }
+  }
+}

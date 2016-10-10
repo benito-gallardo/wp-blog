@@ -1,0 +1,86 @@
+//Features > LP
+.facebook-social-store {
+	.light-blue {
+		background-color: #63a4dc;
+	}
+	.arrow-down {
+		margin-left: -20px;
+	}
+	.nudge-down {
+		position: relative;
+		top: 2px;
+	}
+}
+
+//Features > LP
+.mobile-commerce-solution {
+	.hero {
+		background-image: url(/assets/images/mobile-commerce-solution-img-12.jpg);
+		overflow: hidden;
+		background-position-x: left;
+	}
+	@media #{$medium-and-up} {
+		#parallelogram {
+			width: 1322px;
+	    height: 1182px;
+			background: rgba(0,0,0,.7);
+			position: absolute;
+	    z-index: -1;
+	    top: -500px;
+	    right: 66%;
+			-webkit-transform: skew(20deg) rotate(45deg);
+			   -moz-transform: skew(20deg) rotate(45deg);
+			     -o-transform: skew(20deg) rotate(45deg);
+		}
+	}
+	@media #{$small-and-down} {
+		.hero {
+			background-position-x: 60%;
+		}
+		.hero .valign-middle:before {
+			content: '';
+			display: block;
+			background-color: rgba(0,0,0,.7);
+	    width: 500%;
+	    height: 500%;
+	    -ms-transform: rotate(15deg);
+	    -webkit-transform: rotate(15deg);
+	    transform: rotate(31deg);
+	    position: absolute;
+	    z-index: -1;
+	    top: -60%;
+	    left: -200%;
+		}
+	}
+}
+
+//Features > LP
+.responsive-ecommerce-templates {
+	.hero {
+		background-image: url(/assets/images/responsive-ecommerce-templates-hero-bg.jpg);
+		overflow: visible;
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/responsive-ecommerce-templates-hero-bg-sm.jpg);
+		}
+		.valign-middle {
+			top: 40%;
+		}
+		.middle-bottom-straddle {
+			top: 60%;
+			width: 100%;
+			@media #{$small-only} {
+				top: 62%;
+			}
+			@media #{$xsmall-and-down} {
+				top: 70%;
+			}
+
+		}
+	}
+	.better-for-customers {
+		background-image: url(/assets/images/responsive-ecommerce-templates-details-banner.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/responsive-ecommerce-templates-details-banner-sm.jpg);
+		}
+	}
+}

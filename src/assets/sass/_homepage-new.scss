@@ -1,0 +1,171 @@
+.homepage-new{
+	&.loaded .section-1 .right-side img{
+   			opacity:1;
+   		}
+	.hgroup{
+		.h1 {
+			font-size: 2.5 rem;
+		}
+		.col.push-m5{
+			@media #{$medium-and-up}{
+				padding-left: 190px;
+    		padding-right: 20px;
+			}
+		}
+		.brand-right-text {
+			@media #{$medium-and-up}{
+				max-width: 583px;
+			}
+			@media #{$small-and-down}{
+				width: 85%;
+				margin:0 auto;
+			}
+		}//brand-right-text
+		.cover {
+      background: url(/assets/images/homepage_herobg_lgV2.jpg) left center no-repeat;
+		}//cover
+		.jumbo-img {
+			@media #{$medium-and-up} {
+				max-width: 339px;
+		    position: absolute;
+		    right: 0;
+	    	margin-right: -169px;
+			}
+	    img{
+	    	@media #{$small-only}{
+					max-width: 187px;
+	    	}//@medium
+	    	@media #{$xsmall-only} {
+	    		max-width: 248px;
+	    	}//@small-and-down
+	    }//img
+		}//jumber-img
+	}//hgroup
+	.section-1{
+		.left-side{
+			z-index: 2;
+		}
+		.right-side{
+			img{
+				opacity:0;
+   		 transition:opacity .3s;
+   		
+				@media #{$large-and-up}{
+					 position: relative;
+			    left: -100px;
+			    z-index: 0;
+				}
+				@media #{$medium-only}{
+					top: 30px;
+			    left: -40px;
+			    width: 163%;
+			    height: auto;
+				}
+			}
+		}
+	}//section-1
+	.section-2{
+		/* Slider */
+		.col.pull-l6 {
+    	position: relative;
+		}
+		.col.push-l6{
+			@media screen and (min-width:1201px) and (max-width:1440px) {
+				position: relative;
+    		left: 580px;
+			}
+			&.valign-middle-40{
+				@media #{$small-and-down}{
+					top:0;
+					@include translate(0,0);
+				}
+			}
+		}
+		.img-wrap {
+			position: relative;
+	    max-width: 863px;
+	    @media screen and (min-width:1201px){
+	    	left: -182px;
+		    width: 125.513%;
+		    min-width: 730px;
+	    }
+	    @media #{$medium-only}{
+	    	left: -46px;
+	    }
+        >img {
+          position: relative;
+          width: 100%;
+			    z-index: 1;
+        }
+      }
+    #slider {
+      position: absolute;
+      top: 8%;
+	    width: 74.5%;
+	    left: 13%;
+      z-index: 2;
+      overflow: hidden;
+
+      figure {
+        position: relative;
+        width: 800%;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        text-align: left;
+        animation: 30s homePageSlider infinite;
+
+        img {
+          width: 12.5%;
+          height: auto;
+          float: left;
+        } //figure img
+      } // slider figure
+    } // slider
+	}//section-2
+	.section-3{}//section-3
+	.section-4{}//section-4
+	.section-6{
+		.cover{
+			background-image:url(/assets/images/homepage-brand_medusa_bg.jpg);
+			height:500px;
+			right: 0;
+			top:0;
+			width:100%;
+			background-position:top left;
+			
+			@media #{$medium-and-up}{
+				position:absolute;
+				width: 50%;
+				height:100%;
+				background-position: 20% center;
+			}
+			@media #{$small-and-down}{
+				background-image: url(/assets/images/homepage_medusaBg_sm.jpg);
+			}
+			@media screen and (max-width: 350px){
+    		background-position: -95px top;
+			}
+
+		}
+	}//section-6
+}//homepage-new
+@keyframes homePageSlider { 
+  0%  { opacity: 0%; left: 0%}
+  2%  { opacity:1;}
+  11% { left: 0%; }
+  13% { left: -100%; }
+  24% { left: -100%; }
+  26% { left: -200%; }
+  37% { left: -200%; }
+  39% { left: -300%; }
+  50% { left: -300%; }
+  52% { left: -400%; }
+  63% { left: -400%; }
+  65% { left: -500%; } 
+  76% { left: -500%; }
+  78% { left: -600%; } 
+  89% { left: -600%; }
+  91% { left: -700%; }
+  100% {left:-700%;  }  
+}

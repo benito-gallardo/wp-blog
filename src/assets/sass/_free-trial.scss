@@ -1,0 +1,408 @@
+.free-trial {
+	#main {
+		.demoActive, .demoExpired, .demoDeleted, .formFlip {
+			margin-top:25px;
+		}
+		.text-thin {
+			margin-top:0;
+		}
+		.btn, .btn-large, .btn-small{
+			-webkit-transform: initial;
+		}
+		.loader {
+			margin-top:100px;
+			.circle-clipper .circle {
+			  border-width: 10px;
+			}
+			.preloader-wrapper.big {
+			  width:125px;
+			  height:125px;
+			}
+		}
+		.formHeading {
+			margin-bottom:0;
+		}
+		form {
+			.smsCheckBoxWrapper {
+		    padding: 0 0 15px 0;
+		    label {
+		    	line-height: 1.4;
+		    	font-size:0.75rem;
+		    }
+			}
+			.submitBtn {
+		    margin: 20px 0;
+			}
+			.forgotPassword {
+				margin-top:20px;
+			}
+			.small-text {
+				font-size:0.75em;
+				text-align:center;
+			}
+			.validation {
+				color:#fe5f55;
+				padding:0 12px;
+			}
+			.phoneValidation {
+				color:#fe5f55;
+				padding:10px 0;
+			}
+			.input-field{
+				line-height:1em;
+				margin-top: 0.75em;
+				input[type="checkbox"].filled-in:not(:checked)+label:after,
+				input[type="checkbox"].filled-in:checked+label:before,
+				input[type="checkbox"].filled-in:checked+label:after{
+					top:10px;
+				}
+				label {
+					top:1rem;
+					&.active {
+						color:#4ad4c9;
+					}
+				}
+			}
+			input {
+				height:2.75em;
+			}
+			.row, input {
+				margin-bottom:0;
+			}
+		}
+		.formError {
+			color:#fe5f55;
+			font-size:1.25em;
+		}
+		.privacySection {
+			margin-top:20px;
+			.privacy {
+				font-size:0.75em;
+			}
+		}
+		flip {
+		  display: block;
+		  position: relative;
+		  height: 100%;
+		  width: 100%;
+		  -webkit-transform: translate3d(0,0,0)!important;
+		  transform:translate3d(0,0,0)!important;
+		  transform-style: preserve-3d;
+		  -webkit-transform-style: preserve-3d;
+		}
+		.col-contact, footer {
+			-webkit-transform: translate3d(0,0,0);
+		}
+		flip > .flip-visible-add, flip > .flip-visible-remove {
+		  position: absolute;
+		  display: block;
+		  height: 100%;
+		  width: 100%;
+		}
+		flip > .flip-visible-add, flip > .flip-visible-remove { 
+		  -webkit-backface-visibility: hidden; 
+		  backface-visibility: hidden; 
+		  overflow:visible;
+		  /* Time can be overriden */
+		  transition: -webkit-transform 1s; 
+		  transition: transform 1s;
+		}
+		flip > flip-front.flip-visible-remove {
+		  -webkit-transform:  perspective(1200px) rotateY(0); 
+		  transform:  perspective(1200px) rotateY(0);   
+		}
+		flip > flip-front.flip-visible-remove.flip-visible-remove-active {
+		  -webkit-transform: perspective(1200px) rotateY(-180deg); 
+		  transform: perspective(1200px) rotateY(-180deg);   
+		}
+		flip > flip-back.flip-visible-add {
+		  -webkit-transform:  perspective(1200px) rotateY(180deg); 
+		  transform:  perspective(1200px) rotateY(180deg);    
+		}
+		flip > flip-back.flip-visible-add.flip-visible-add-active {
+		  -webkit-transform:  perspective(1200px) rotateY(0); 
+		  transform:  perspective(1200px) rotateY(0);    
+		}
+		flip > flip-front.flip-visible-add {
+		 -webkit-transform:  perspective(1200px) rotateY(-180deg); 
+		 transform:  perspective(1200px) rotateY(-180deg);    
+		}
+		flip > flip-front.flip-visible-add-active {
+		  -webkit-transform:  perspective(1200px) rotateY(0); 
+		  transform:  perspective(1200px) rotateY(0);     
+		}
+		flip > flip-back.flip-visible-remove {
+		  -webkit-transform:  perspective(1200px) rotateY(0); 
+		  transform:  perspective(1200px) rotateY(0);      
+		}
+		flip > flip-back.flip-visible-remove-active {
+		 -webkit-transform:  perspective(1200px) rotateY(180deg); 
+		 transform:  perspective(1200px) rotateY(180deg);    
+		}
+		.formFlip.ng-hide-remove.ng-hide-remove-active,
+		.demoDeleted.ng-hide-remove.ng-hide-remove-active,
+		.loader.ng-hide-remove.ng-hide-remove-active,
+		.demoActive.ng-hide-remove.ng-hide-remove-active,
+		.deletedDemo.ng-hide-remove.ng-hide-remove-active,
+		.demoExpired.ng-hide-remove.ng-hide-remove-active, {
+		  -webkit-animation: formShow 1s linear;
+		  -moz-animation:    formShow 1s linear;
+		  -o-animation:      formShow 1s linear;
+		  animation:         formShow 1s linear; 
+		}
+		flip > flip-front, flip > flip-back {
+		  display: none;
+		}
+		flip > .flip-visible {
+		  display: block;
+		}
+		.free-trial-anim {
+			.progress-bar{
+		    position: relative;
+		    max-width: 310px;
+		    width: 100%;
+		    height: 10px;
+		    border-radius: 20px;
+		    overflow: hidden;
+		    background: #dbdbdb;
+		    margin: 0 auto;
+	      .inner{
+			    max-width: 320px;
+			    width: 110%;
+			    height: 10px;
+			  }
+		  }
+		  img{
+		    width: 75px;
+		    text-align: center;
+		    margin: 0 auto;
+		    display: block;
+		  }
+		  .heading-text{
+		    text-align: center;
+		    font-size: 3em;
+		    font-weight: 100;
+		    margin-top: .25em;
+		  }
+		  .triangle{
+		    display: inline-block;
+		    float: left;
+		    width: 0;
+		    height: 0;
+		    border-right: 10px solid transparent;
+		  }
+		  .pct{
+		    display: inline-block;
+		    float: left;
+		    width: 0%;
+		    height: 100%;
+		  }
+		  h3.heading-text{
+		    color: #3b3b3b ;
+		    margin-top:0;
+		  }
+		  &.phase-1{
+		  	h3.heading-text {
+		  		color:  #4ad4c9;
+		  	}
+		  	.pct{
+			    background:  #4ad4c9; 
+			  }
+			  .triangle {
+			    border-top: 10px solid #4ad4c9;
+			  }
+			  .icons{
+			    width: 50%;
+			    position: absolute;
+			  }
+			  .icon-img-0 {
+			    bottom: 0;
+			    left: 25%;
+			    z-index: 3;
+			    opacity: 0;
+			  }
+			  .icon-img-1 {
+			    top: -14%;
+			    left: 6%;
+			    z-index: 2;
+			    opacity: 0;
+			  }
+			  .icon-img-2 {
+			    top: -14%; 
+			    right: 6%;
+			    z-index: 2;
+			    opacity: 0;
+			  }
+			  .icon-img-3 {
+			    top: -25%;
+			    left: 25%;
+			    z-index: 1;
+			    opacity: 0;
+			  }
+		  }
+		  &.phase-2{
+		  	h3.heading-text{
+		  		color:  #fe5f55;
+		  	}
+		  	.pct{
+			    background:  #fe5f55; 
+			  }
+			  .triangle {
+			    border-top: 10px solid #fe5f55;
+			  }
+			  .icon-img-0,.icon-img-1{
+			  	-webkit-animation-name: spin;
+		      -webkit-animation-duration: 4000ms;
+		      -webkit-animation-iteration-count: infinite;
+		      -webkit-animation-timing-function: linear;
+		      -moz-animation-name: spin;
+		      -moz-animation-duration: 4000ms;
+		      -moz-animation-iteration-count: infinite;
+		      -moz-animation-timing-function: linear;
+		      -ms-animation-name: spin;
+		      -ms-animation-duration: 4000ms;
+		      -ms-animation-iteration-count: infinite;
+		      -ms-animation-timing-function: linear;
+		      
+		      animation-name: spin;
+		      animation-duration: 4000ms;
+		      animation-iteration-count: infinite;
+		      animation-timing-function: linear;
+			  }
+			  .icon-img-0{
+			    width: 50%;
+			    top: 0%;
+			    right: -5%;
+			      -webkit-animation-name: spin-reverse;
+			      -webkit-animation-direction:normal;
+			      animation-direction: reverse;
+			  }
+			  .icon-img-1{
+			    top: 28%;
+			    left: 0;
+			    width: 70%;
+			  }
+		  }
+		  &.phase-3{
+		  	h3.heading-text {
+		  		color:  #a2eda9;
+		  	}
+		  	.pct{
+			    background:  #a2eda9; 
+			  }
+			  .triangle {
+			    border-top: 10px solid #a2eda9;
+			  }
+			  .icon-img-0 {
+			    animation: up-down 0.6s linear infinite alternate;
+			    -webkit-animation: up-down 0.6s linear infinite alternate;
+			    -o-animation: up-down 0.6s linear infinite alternate;
+			    -moz-animation: up-down 0.6s linear infinite alternate;
+			  }
+			  .icon-img-0{
+			    bottom: 0;
+			    width: 75%;
+			    left: 13px;
+			    margin-bottom: 16px;
+			  }
+			  .icon-img-1{
+			    bottom: -10%;
+			    width: 100%;
+			    left: 5px;
+			  }
+
+		  }
+		  .white-bar{
+		    display:block;
+		    width: 20px;
+		    height: 14px;
+		    background: url('/assets/images/white-bar.png');
+		    position: absolute;
+		    left: 27%;
+		  }
+		  .bar-2{
+		    left: 62%;   
+		  }
+		  .icon-wrapper{
+		    width: 65px;
+		    height: 65px;
+		    margin: 0 auto .25em;
+		    position:relative;
+		    overflow: visible;
+		  }
+		  .icons{
+		    position: absolute;
+		  }
+		}
+	}
+	@-webkit-keyframes formShow {
+	  0%   { opacity: 0; }
+	  100% { opacity: 1; }
+	}
+	@-moz-keyframes formShow {
+	  0%   { opacity: 0; }
+	  100% { opacity: 1; }
+	}
+	@-o-keyframes formShow {
+	  0%   { opacity: 0; }
+	  100% { opacity: 1; }
+	}
+	@keyframes formShow {
+	  0%   { opacity: 0; }
+	  100% { opacity: 1; }
+	}
+	@-ms-keyframes spin {
+      from { -ms-transform: rotate(0deg); }
+      to { -ms-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin {
+      from { -moz-transform: rotate(0deg); }
+      to { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+      from { -webkit-transform: rotate(360deg); }
+      to { -webkit-transform: rotate(0deg); }
+  }
+  @-webkit-keyframes spin-reverse {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+  @keyframes up-down {
+    0% {
+      bottom: 0px;
+    }
+    100% {
+      bottom: 10px;
+    }
+  }
+  @-webkit-keyframes up-down {
+    0% {
+      bottom: 0px;
+    }
+    100% {
+      bottom: 10px;
+    }
+  }
+	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	  display: none !important;
+	}
+	@media screen and (max-width: $small-screen-max) {
+		form .input-field input[type="checkbox"].filled-in:not(:checked)+label:after,
+		form .input-field input[type="checkbox"].filled-in:checked+label:before,
+		form .input-field input[type="checkbox"].filled-in:checked+label:after {
+			top:0px!important;
+		}
+					
+	}
+	.page-footer {
+		-webkit-transform: translate3d(0,0,0)!important;
+	}
+}

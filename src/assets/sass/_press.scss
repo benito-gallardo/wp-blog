@@ -1,0 +1,71 @@
+.press {
+	#main {
+		min-height:500px;
+	}
+	ul.tabs{
+		font-size: 22px;
+		overflow-x: hidden;
+
+		.indicator{
+			background-color: nth(nth($blue, 2), 2);
+		}
+
+		.tab{
+			  -webkit-box-flex: 0;
+		    -webkit-flex-grow: 0;
+		    -ms-flex-positive: 0;
+		    flex-grow: 0;
+			a{
+			color: nth(nth($grey, 3), 2);
+				&:hover{
+					color: nth(nth($blue, 2), 2);
+				}
+				&.active{
+					font-weight: 400;
+					color: nth(nth($blue, 2), 2);
+				}
+			}
+		}
+
+		@media #{$medium-and-up}{
+ 			flex-direction: column;
+			height: 100%;
+			float: right;
+			max-width: 130px;
+			border-right: 2px solid nth(nth($blue, 2), 2);
+
+			.indicator{
+				display: none;
+			}
+
+			li a{
+				text-align: left;
+			}
+		}
+	}
+
+  .section-2 {
+    @media #{$xsmall-and-down} {
+      .valign-wrapper {
+      	display: block;
+      }
+    }
+  }
+
+  #press{
+  	padding-top: 2em;
+
+  	@media #{$medium-and-up}{
+  		padding-top: 0;
+  	}
+  }
+  #contact{
+  	padding-top: 2em;
+  	text-align: center;
+
+  	@media #{$medium-and-up}{
+  		padding-top: 1em;
+  	}
+
+  }
+}

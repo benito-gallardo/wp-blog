@@ -1,0 +1,71 @@
+.sem-lp{
+
+	/* Video Promo Section
+	-------------------------------*/
+	section.video-promo{
+
+		.img-wrap{
+			margin: auto;
+			img{
+				width: 100%;
+				height: auto;
+			}
+
+			@media #{$medium-and-up}{
+				margin: 0;
+				img{
+					width: auto;
+				}
+			}
+		}
+
+		.text-wrap{
+			text-align: center;
+			margin: auto;
+			
+			@media #{$medium-and-up}{
+				margin-left: 50px;
+			}
+
+			ul{
+				text-align: left;
+				padding-left: 20px;
+
+				li{
+					padding-top: 12px;
+				}
+			}
+
+			a{
+				margin-top: 18px;
+			}
+
+			@media #{$medium-and-up}{
+				text-align: left; 
+				ul{
+					padding-left: 0px;
+				}
+			}
+		}
+
+	}
+
+	/* Features Section
+	----------------------------*/
+	section.features{
+		i{
+			font-size: 4rem;
+			color: $secondary-color;
+		}
+	}
+
+	#video-modal{
+		box-shadow: none;
+
+		.modal-header{
+			i{
+				font-size: 48px;
+			}
+		}
+	}
+}

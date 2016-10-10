@@ -1,0 +1,29 @@
+.success {
+  #volusion-success-terms {
+    overflow:hidden;
+  }
+}
+@media #{$large-and-up} {
+  .success {
+    .section-1 img.responsive-img {
+    width: 800px;
+    max-width:800px;
+    margin-top: -215px;
+    margin-bottom:-250px;
+    position:relative;
+    z-index:-1;
+    }
+  }
+}
+@media #{$xsmall-only} {
+  .success {
+    .section-1 {
+      h1 {
+        font-size:2.5em;
+      }
+      .btn {
+        margin-bottom:3em;
+      }
+    }
+  }
+}

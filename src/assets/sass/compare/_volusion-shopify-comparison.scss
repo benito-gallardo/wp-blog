@@ -1,0 +1,204 @@
+  .volusion-shopify-comparison {
+    .hero {
+      background-image: url(/assets/images/volusion-shopify-comparison-shopify-volusion-hero-v3.jpg);
+      .modal-trigger {
+        height: 100px;
+        width: 50px;
+        margin: auto;
+      }
+      @media #{$xsmall-only} {
+        max-height: 400px;
+        h1 {
+          font-size: 1.75em;
+        }
+        h2 {
+          font-size: 0.875em;
+        }
+      }
+    }
+    .subnav {
+      height: 100px;
+      max-width: 1200px;
+      margin: auto;
+      .tab {
+        padding: 0;
+        border: 1px solid #8c8c8c;
+        @media #{$small-only} {
+          width: 48%;
+        }
+        @media #{$small-and-down} {
+          border: 1px solid #8c8c8c!important;
+          border-radius: 0px!important;
+          margin: 2px;
+        }
+        a {
+          display: block;
+          padding: 10px 0;
+          font-size: 18px;
+          white-space: nowrap;
+          @media #{$xsmall-only} {
+            text-align: left;
+            padding-left: 10px;
+          }
+          i {
+            position: relative;
+            top: 5px;
+            padding-right: 10px;
+          }
+        }
+      }
+      .first {
+        border-right: none;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      .third {
+        border-left: none;
+        border-right: none;
+      }
+      .last {
+        border-right: 1px solid #8c8c8c;
+        border-top: 1px solid #8c8c8c;
+        border-bottom: 1px solid #8c8c8c;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+    .switching {
+      .switching-text {
+        @media #{$large-and-down} {
+          padding-top: 10px!important;
+        }
+      }
+    }
+    &.kevin-b {
+      $light-blue: #009af9;
+      $yellow: #f8e71c;
+      margin: 0 !important;
+      font-family: 'Myriad Set Pro';
+      #main {
+        padding-bottom: 0;
+      }
+      .hero {
+        visibility: hidden;
+        background-image: url("/assets/images/volusion-shopify-comparison-hero-v2.jpg");
+        background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 43%), url("/assets/images/volusion-shopify-comparison-hero-v2.jpg");
+        background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 43%), url("/assets/images/volusion-shopify-comparison-hero-v2.jpg");
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 43%), url("/assets/images/volusion-shopify-comparison-hero-v2.jpg");
+        padding-top: 3rem;
+        max-height: 682px;
+        .material-icons {
+          font-size: 3rem;
+          position: absolute;
+        }
+        .store-desc {
+          display: inline-block;
+        }
+      }
+      .max-logo-width {
+        max-width: 588px;
+        float: right;
+        margin-left: 30px;
+      }
+      .navbar-fixed {
+        position: absolute;
+        width: 100%;
+      }
+      nav.top-nav {
+        background-color: transparent;
+        box-shadow: none;
+        position: static;
+        .col-button a {
+          max-width: none;
+          margin: 0 auto;
+          padding: 0 1.3rem;
+          line-height: 43px;
+          font-weight: 300;
+        }
+      }
+      .light-blue {
+        background: $light-blue !important;
+      }
+      .text-light-blue {
+        color: $light-blue;
+      }
+      .yellow {
+        background: $yellow !important;
+      }
+      .text-yellow {
+        color: $yellow;
+      }
+      .arrows {
+        vertical-align: middle;
+        position: relative;
+        top: 15px;
+        max-width: 150px;
+      }
+      .asseenin {
+        display: inline-block;
+        height: 50px;
+        line-height: 60px;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+        color: #8d9099;
+        font-size: 1.2rem;
+      }
+      .padding-left-l {
+        padding-left: 3.8rem !important;
+      }
+      .nowrap {
+        white-space: nowrap;
+      }
+      @media #{$small-and-down} {
+        .asseenin {
+          color: #009af9 !important;
+          height: auto;
+          line-height: 1;
+          text-transform: lowercase;
+        }
+        .max-logo-width {
+           
+          float: none;
+          margin-left: 0;
+              display: block;
+        }
+      }
+      @media #{$small-and-down} {
+        .arrows {
+          width: 20%;
+          top: 10px;
+        }
+        .h-48 {
+          font-size: 2.5rem;
+        }
+        .nowrap {
+          .btn {
+            font-size: 18px;
+            padding: 2px 30px;
+          }
+        }
+      }
+      @media #{$xsmall-and-down} {
+        nav.top-nav .col-logo .logo {
+          max-width: 100px;
+        }
+        .arrows {
+          width: 20%;
+          top: 10px;
+        }
+        
+        nav.top-nav .col-logo .logo {
+          max-width: 100px;
+        }
+      }
+      @media screen and (max-width:400px) {
+        .col-login {
+          display: none;
+        }
+      }
+      .hero {
+        visibility: visible;
+      }
+    }
+  }

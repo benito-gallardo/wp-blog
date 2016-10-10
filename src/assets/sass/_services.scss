@@ -1,0 +1,346 @@
+// Services Homepage
+.ecommerce-services {
+	.hero {
+		background-image: url(/assets/images/ecommerce-services-hero.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/ecommerce-services-hero-sm.jpg);
+		}
+		a.btn {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+		@media #{$medium-and-down} {
+			a.btn {
+				display: block;
+				max-width: 320px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	.icon {
+	    background-image: url(/assets/images/ecommerce-services-sprite.png);
+	    background-repeat: no-repeat;
+	    display: block;
+	}
+	.icon-analytics { width: 19px; height: 24px; background-position: -5px -5px; }
+	.icon-conversion-optimization { width: 21px; height: 23px; background-position: -5px -39px; }
+	.icon-credit-cards { width: 29px; height: 25px; background-position: -5px -72px; }
+	.icon-design-add-ons { width: 30px; height: 25px; background-position: -5px -107px; }
+	.icon-design-packages { width: 30px; height: 30px; background-position: -5px -142px; }
+	.icon-domain-names { width: 27px; height: 27px; background-position: -5px -182px; }
+	.icon-fraud-protection { width: 19px; height: 22px; background-position: -5px -219px; }
+	.icon-free-templates { width: 37px; height: 25px; background-position: -5px -251px; }
+	.icon-live-chat { width: 27px; height: 20px; background-position: -5px -286px; }
+	.icon-ppc { width: 22px; height: 23px; background-position: -5px -316px; }
+	.icon-premium-templates { width: 30px; height: 29px; background-position: -5px -349px; }
+	.icon-responsive-templates { width: 26px; height: 29px; background-position: -5px -388px; }
+	.icon-seo { width: 25px; height: 21px; background-position: -5px -427px; }
+	.icon-shopping-feeds { width: 17px; height: 17px; background-position: -5px -458px; }
+	.icon-social-media { width: 32px; height: 21px; background-position: -5px -485px; }
+	.icon-ssl { width: 15px; height: 23px; background-position: -5px -516px; }
+	.icon-volusion-select { width: 21px; height: 22px; background-position: -5px -549px; }
+}
+
+// Services > Marketing
+.ecommerce-marketing-services {
+	.hero {
+		background-image: url(/assets/images/ecommerce-marketing-services-hero.jpg);
+		a.btn {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+		@media #{$medium-and-down} {
+			a.btn {
+				display: block;
+				max-width: 320px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+//Services > Web Design
+.ecommerce-website-design-services {
+	.hero {
+		background-image: url(/assets/images/ecommerce-website-design-services-hero.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/ecommerce-website-design-services-hero-sm.jpg);
+		}
+		a.btn {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+		@media #{$medium-and-down} {
+			a.btn {
+				display: block;
+				max-width: 320px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	@media #{$small-and-down} {
+		.slider .slides li img {
+			background-size: 100% auto;
+	    background-repeat: no-repeat;
+		}
+	}
+}
+
+// Services > Marketing > PPC
+.ecommerce-ppc {
+	.hero {
+		background-image: url(/assets/images/ecommerce-ppc-hero.jpg);
+	}
+	.icon {
+		background-image: url(/assets/images/ecommerce-ppc-sprite.png);
+		background-repeat: no-repeat;
+	}
+	.icon-ppc-keywords { width: 27px; height: 30px; background-position: 0 -276px; }
+  .icon-ppc-ad-copy { width: 30px; height: 28px; background-position: 0 -196px; }
+	.icon-ppc-campaigns { width: 35px; height: 22px; background-position: 0 -224px; }
+	.icon-ppc-industry-experience { width: 19px; height: 30px; background-position: 0 -246px; }
+	
+	@media #{$small-and-down} {
+		table a.btn {
+			padding: 0;
+			display: block;
+		}
+		table th,
+		table h3 {
+			font-size: 13px;
+		}
+	}
+}
+
+// Services > Marketing > SEO
+.ecommerce-seo-services {
+	.hero {
+		background-image: url(/assets/images/ecommerce-seo-services-hero.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/ecommerce-seo-services-hero-sm.jpg);
+		}
+	}
+	.icon {
+		background-image: url(/assets/images/ecommerce-seo-services-sprite.png);
+		background-repeat: no-repeat;
+	}
+	.icon-seo-keywords { width: 30px; height: 23px; background-position: 0 -419px; }
+	.icon-seo-build-website { width: 30px; height: 30px; background-position: 0 -331px; }
+	.icon-seo-optimized-content { width: 30px; height: 30px; background-position: 0 -442px; }
+	.icon-seo-analysis { width: 33px; height: 25px; background-position: 0 -306px; }
+	.icon-seo-ethical { width: 19px; height: 30px; background-position: 0 -389px; }
+	.icon-seo-consistent { width: 30px; height: 28px; background-position: 0 -361px; }
+	.fa-check {
+		line-height: inherit;
+	}
+}
+
+//Services > Marekting > Other services > Conversion Optimization
+.ecommerce-consulting-conversion-rate-optimization {
+	.hero {
+		background-image: url(/assets/images/ecommerce-consulting-hero.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/ecommerce-consulting-hero-sm.jpg);
+		}
+	}
+	.icon-cro {
+		background-image: url(/assets/images/ecommerce-consulting-icons.png);
+	}
+	.icon-analysis { width: 30px; height: 30px; background-position: 0 -166px; }
+	.icon-implementation { width: 30px; height: 27px; background-position: 0 -102px; }
+	.icon-branding-standards { width: 30px; height: 21px; background-position: 0 -81px; }
+	.icon-marketing-strategy { width: 30px; height: 37px; background-position: 0 -129px; }
+}
+
+//Services > Marekting > Other services > Ecommerce analytics
+.ecommerce-analytics {
+	.hero {
+		background-image: url(/assets/images/ecommerce-analytics-hero.jpg);
+	}
+	@media #{$xsmall-only} {
+		.hero {
+			background-image: url(/assets/images/ecommerce-analytics-hero-xs.jpg);
+		}
+	}
+	.icon {
+    background-image: url(/assets/images/ecommerce-analytics-sprite.png);
+    background-repeat: no-repeat;
+	}
+	.icon-analytics-01 { width: 27px; height: 30px; background-position: 0 0; }
+	.icon-analytics-02 { width: 33px; height: 25px; background-position: 0 -30px; }
+	.icon-analytics-03 { width: 28px; height: 26px; background-position: 0 -55px; }
+	@media #{$small-and-down} {
+		table a.btn {
+			padding: 0 .5em;
+			display: block;
+		}
+		table th,
+		table h3,
+		table p {
+			font-size: 13px;
+		}
+	}
+}
+
+
+//Services > Business Tools > Credit Card Processing
+.credit-card-processing {
+	.hero {
+		background-image: url(/assets/images/credit-card-processing-hero.jpg);
+		background-position: top;
+	}
+	.process-anywhere {
+		background-image: url(/assets/images/credit-card-processing-hero-2.jpg);
+	}
+	.sprite {
+	    background-image: url(/assets/images/credit-card-processing-sprite.jpg);
+	    background-repeat: no-repeat;
+	    display: block;
+	}
+	.sprite-credit-card-processing-circle-1 {
+	    width: 280px;
+	    height: 280px;
+	    background-position: 0 0;
+	}
+
+	.sprite-credit-card-processing-circle-2 {
+	    width: 280px;
+	    height: 280px;
+	    background-position: 0 -280px;
+	}
+
+	.sprite-credit-card-processing-circle-3 {
+	    width: 280px;
+	    height: 280px;
+	    background-position: 0 -560px;
+	}
+
+}
+
+//Services > Business Tools > Credit Card Processing > International
+.ecommerce-credit-card-processing-international {
+	@media #{$medium-and-down} {
+		table h4 {
+			font-size: 10px;
+		}
+	}
+}
+
+//Services > Live Chat
+.ecommerce-live-chat-software {
+	.hero {
+		background-image: url(/assets/images/ecommerce-live-chat-software-hero.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/ecommerce-live-chat-software-hero-sm.jpg);
+		}
+	}
+	@media #{$small-and-down} {
+		table,
+		table h3 {
+			font-size: .9rem;	
+		}
+	}
+}
+
+//Services > Marketing > Social Media
+.ecommerce-social-media-marketing-services {
+	.hero {
+		background-image: url(/assets/images/ecommerce-social-media-marketing-services-hero.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/ecommerce-social-media-marketing-services-hero-sm.jpg);
+		}
+	}
+	.icon {		
+    background-image: url(/assets/images/ecommerce-social-media-marketing-services-sprite.png);
+    background-repeat: no-repeat;
+	}
+  .icon-social-social-research { width: 27px; height: 30px; background-position: 0 -578px; }
+	.icon-social-consistent-involvement { width: 25px; height: 30px; background-position: 0 -500px; }
+	.icon-social-engaging-content { width: 30px; height: 25px; background-position: 0 -530px; }
+	.icon-social-analysis { width: 24px; height: 28px; background-position: 0 -472px; }
+	.icon-social-social-influence { width: 30px; height: 23px; background-position: 0 -555px; }
+	.icon-social-voice { width: 22px; height: 30px; background-position: 0 -608px; }
+	
+	@media #{$xsmall-and-down} {
+		table a.btn {
+			padding: 0.5em;
+			display: block;
+		}
+		table th,
+		table h3,
+		table p {
+			font-size: 12px;
+		}
+	}
+}
+
+//Services > Web Design > Design packages
+.custom-ecommerce-web-design-pricing {
+	.hero {
+		background-image: url(/assets/images/custom-ecommerce-web-design-pricing-blurred.jpg);
+	}
+	.new-feature:after {
+    content: "New!";
+    color: #02868B;
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+    left: 3px;
+}
+	.premium-components {
+		background-image: url(/assets/images/custom-ecommerce-web-design-pricing-design-components-background.jpg);
+	}
+	.or-divider {
+    display: block;
+    margin: 1em auto;
+    width: 240px;
+    height: 22px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(/assets/images/custom-ecommerce-web-design-pricing-or.png) no-repeat;
+	}
+	.premium-or {
+    content: "";
+    margin-left: -35px;
+    background: url(/assets/images/custom-ecommerce-web-design-pricing-or-section.png) no-repeat;
+    width: 70px;
+    height: 35px;
+	}
+	.icon-wrap {
+		min-height: 30px;
+	}
+	.icon {
+    background-image: url(/assets/images/custom-ecommerce-web-design-pricing-sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+	}
+	.icon-corner {width: 50px; height: 50px; background-position: -5px -5px; }
+	.icon-ad {width: 37px; height: 30px; background-position: -5px -65px; }
+	.icon-blogger {width: 28px; height: 28px; background-position: -5px -105px; }
+	.icon-brand-kit {width: 25px; height: 21px; background-position: -5px  -143px;}
+	.icon-category {width: 39px; height: 25px; background-position: -5px -174px; }
+	.icon-communications {width: 33px; height: 24px; background-position: -5px  -209px;}
+	.icon-customer-exp {width: 28px; height: 28px; background-position: -5px  -243px;}
+	.icon-featured-prod {width: 65px; height: 27px; background-position: -5px  -281px;}
+	.icon-graphics {width: 34px; height: 11px; background-position: -5px -318px; }
+	.icon-locator {width: 21px; height: 25px; background-position: -5px -339px; }
+	.icon-megamenu {width: 29px; height: 27px; background-position: -5px -374px; }
+	.icon-newsletter {width: 32px; height: 28px; background-position: -5px  -411px;}
+	.icon-pop-up-window {width: 27px; height: 27px; background-position: -5px  -449px;}
+	.icon-quickview {width: 27px; height: 27px; background-position: -5px  -486px;}
+	.icon-single-graphic {width: 38px; height: 13px; background-position: -5px  -523px;}
+	.icon-social {width: 60px; height: 24px; background-position: -5px -546px; }
+	.icon-premium {width: 65px; height: 47px; background-position: -5px -580px; }
+	.icon-regular {width: 35px; height: 35px; background-position: -5px -637px; }
+
+	.padding-bottom-340 {
+		padding-bottom: 340px;
+	}
+	.neg-margin-top-340 {
+		margin-top: -340px;
+	}
+	
+}

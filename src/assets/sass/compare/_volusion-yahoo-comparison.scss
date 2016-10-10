@@ -1,0 +1,79 @@
+.volusion-yahoo-comparison {
+	.hero{
+		background-image: url(/assets/images/volusion-yahoo-comparison-yahoo_competitor_hero.jpg);
+		.modal-trigger {
+			height:100px;
+			width:50px;
+			margin:auto;
+		}
+		@media #{$xsmall-only} {
+	    max-height: 400px;
+	    h1 {
+	    	font-size:1.75em;
+	    }
+	    h2 {
+	    	font-size:0.875em;
+	    }
+	  }
+	}
+	.subnav {
+    height: 100px;
+    max-width: 1200px;
+    margin: auto;
+		.tab {
+			padding:0;
+			border:1px solid #8c8c8c;
+			@media #{$small-only} {
+    		width: 48%;
+		  }
+		  @media #{$small-and-down} {
+		    border:1px solid #8c8c8c!important;
+		    border-radius: 0px!important;
+        margin: 2px;
+		  }
+			a {
+				display:block;
+				padding:10px 0;
+				font-size:18px;
+		    white-space: nowrap;
+				@media #{$xsmall-only} {
+		  		text-align: left;
+		  		padding-left:10px;
+			  }
+				i {
+			    position: relative;
+    			top: 5px;
+    			padding-right:10px;
+				}
+			}
+		}
+		.first {
+			border-right: none;
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+		.third {
+			border-left:none;
+			border-right:none;
+		}
+		.last {
+			border-right:1px solid #8c8c8c;
+			border-top:1px solid #8c8c8c;
+			border-bottom:1px solid #8c8c8c;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+	.support {
+		@media #{$xsmall-only} {
+			padding-top:0!important;
+		}
+	}
+	.switching {
+		.switching-text {
+			@media #{$large-and-down} {
+		    padding-top:10px!important;
+		  }
+		}
+	}
+}

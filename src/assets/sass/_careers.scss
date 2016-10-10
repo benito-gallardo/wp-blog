@@ -1,0 +1,184 @@
+.careers {
+    .hero {
+        background: url('/assets/images/careers-hero-bg-m.jpg') center no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        .rotate-arrow {
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            bottom: 7%;
+            left: 50%;
+            margin-left: -17px;
+            animation: uppy .7s linear infinite alternate;
+            -webkit-animation: uppy .7s linear infinite alternate;
+        }
+        @media screen and (min-width: $medium-screen-min) {
+            background: url('/assets/images/careers-hero-bg.jpg') center no-repeat;
+            background-size: cover;
+        }
+    }
+    .section-4 {
+        background: url('/assets/images/careers-keep-in-touch-bg-m.jpg') center top no-repeat;
+        background-size: cover;
+        @media screen and (min-width: $medium-screen-min) {
+            background: url('/assets/images/careers-keep-in-touch-bg.jpg') center no-repeat;
+            background-size: cover;
+        }
+    }
+    .section-5 {
+        .container {
+            .volusion-perks {
+                li {
+                    float: left;
+                    height: inherit;
+                    margin: 0;
+                    min-height: 225px;
+                    width: 25%;
+                    color: $vol-grey;
+                    @media screen and (max-width: $xsmall-screen-max) {
+                        width: 50%;
+                        height: 160px;
+                        min-height: initial;
+                        overflow: hidden;
+                    }
+                }
+            }
+            [class^="icon-"],
+            [class*="icon-"] {
+                background-image: url('/assets/images/careers-icon-sprite.png');
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                display: block;
+                margin: 0 auto;
+                line-height: 14px;
+                margin-top: 1px;
+                vertical-align: text-top;
+                width: 20px;
+                height: 19px;
+            }
+            .icon-medicine {
+                width: 69px;
+                background-position: 0 -230px;
+                height: 77px;
+            }
+            .icon-vocation {
+                height: 77px;
+                width: 70px;
+                background-position: -102px -230px;
+            }
+            .icon-price {
+                height: 77px;
+                width: 67px;
+                background-position: -200px -219px;
+            }
+            .icon-parental {
+                height: 77px;
+                width: 26px;
+                background-position: -303px -230px;
+            }
+            .icon-fitness {
+                background-position: 0 -321px;
+                width: 70px;
+                height: 69px;
+            }
+            .icon-beer {
+                width: 53px;
+                height: 69px;
+                background-position: -102px -349px;
+            }
+            .icon-snacks {
+                background-position: -200px -342px;
+                width: 67px;
+                height: 69px;
+            }
+            .icon-love {
+                width: 51px;
+                height: 69px;
+                background-position: -304px -349px;
+            }
+            .icon-dog {
+                width: 67px;
+                height: 55px;
+                background-position: 0 -451px;
+            }
+            .icon-hanger {
+                background-position: -102px -443px;
+                width: 78px;
+                height: 55px;
+            }
+            .icon-massage {
+                background-position: -200px -448px;
+                width: 70px;
+                height: 55px;
+            }
+            .icon-sports {
+                background-position: -304px -452px;
+                width: 55px;
+                height: 55px;
+            }
+        }
+    }
+    @keyframes uppy {
+        0% {
+            bottom: 40px;
+        }
+        100% {
+            bottom: 60px;
+        }
+    }
+    @-webkit-keyframes uppy {
+        0% {
+            bottom: 40px;
+        }
+        100% {
+            bottom: 60px;
+        }
+    }
+    @media screen and (max-width: $small-screen-max) {
+        .section-6 {
+            .container {
+                .quote-marks:before,
+                .quote-marks:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $xsmall-screen-max) {
+        .author-details {
+            text-align: center;
+            img,
+            .author-position {
+                display: inline-block !important;
+                float: none !important;
+                padding: 0 !important;
+            }
+            .author-name {
+                display: block !important;
+            }
+        }
+        @keyframes uppy {
+            0% {
+                bottom: 25px;
+            }
+            100% {
+                bottom: 45px;
+            }
+        }
+        @-webkit-keyframes uppy {
+            0% {
+                bottom: 25px;
+            }
+            100% {
+                bottom: 45px;
+            }
+        }
+    }
+}

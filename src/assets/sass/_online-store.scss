@@ -1,0 +1,114 @@
+.online-store {
+    .main-video-text {
+        .btn i {
+            font-size: 1em;
+        }
+    }
+    .video-card {
+        .video-content {
+            cursor: pointer;
+            display: block;
+            outline: 0;
+            overflow: hidden;
+            position: relative;
+            line-height: 1;
+            font-weight: 300;
+            img {
+                line-height: 1;
+            }
+            &:before {
+                opacity: 0;
+                background-color: rgba(0, 0, 0, .65);
+                content: attr(data-episode);
+                padding-top: 10%;
+                font-size: 1em;
+                line-height: 1.1em;
+                text-transform: uppercase;
+                color: #fff;
+                font-family: Nunito, Helvetica, sans-serif;
+                text-align: center;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                -webkit-transition: opacity .5s ease-in-out;
+                -moz-transition: opacity .5s ease-in-out;
+                -ms-transition: opacity .5s ease-in-out;
+                -o-transition: opacity .5s ease-in-out;
+                transition: opacity .5s ease-in-out;
+            }
+            &:after {
+                opacity: 0;
+                color: #fff;
+                content: attr(data-title);
+                display: inline-block;
+                font-family: Nunito, Helvetica, sans-serif;
+                font-size: 1em;
+                height: 100%;
+                left: 5%;
+                line-height: 1.1em;
+                padding-top: 25%;
+                position: absolute;
+                right: 5%;
+                top: 0;
+                text-align: center;
+                text-transform: uppercase;
+                width: 90%;
+                -webkit-transition: opacity .5s ease-in-out;
+                -moz-transition: opacity .5s ease-in-out;
+                -ms-transition: opacity .5s ease-in-out;
+                -o-transition: opacity .5s ease-in-out;
+                transition: opacity .5s ease-in-out;
+            }
+            .fa-play-circle {
+                display: none;
+                position: absolute;
+                color: #fff;
+                left: 50%;
+                top: 50%;
+                font-size: 3em;
+                margin-left: -20px;
+                margin-top: -22px;
+            }
+            @media #{$small-and-up} {
+                &:hover {
+                    .fa-play-circle {
+                        display: none;
+                    }
+                }
+            }
+            .video,
+            .video-text {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.no-touch {
+    .online-store {
+        .mobile-text {
+            display: none;
+        }
+        .video-card {
+            .video-content {
+                &:hover:after,
+                &:hover:before {
+                    opacity: 1;
+                }
+            }
+        }
+         
+    }
+}
+
+.touch {
+    .online-store {
+        .mobile-text {
+            display: block;
+            height: 40px;
+            line-height: 1.2;
+        }
+    }
+}

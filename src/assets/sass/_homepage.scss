@@ -1,0 +1,141 @@
+.homepage{
+  ///testing remove when done
+ .section-2 .img-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.section-2 .push-l6.valign-middle-40 {
+    position: relative;
+    z-index: 2;
+}
+//////////end of test////////////////////
+  &.loaded .section-1 .right-side img{
+        opacity:1;
+      }
+  .hgroup{
+    .h1 {
+      font-size: 2.5 rem;
+    }
+    .col.push-m5{
+      @media #{$medium-and-up}{
+        padding-left: 190px;
+        padding-right: 20px;
+      }
+    }
+    .brand-right-text {
+      @media #{$medium-and-up}{
+        max-width: 583px;
+      }
+      @media #{$small-and-down}{
+        width: 85%;
+        margin:0 auto;
+      }
+    }//brand-right-text
+    .cover {
+      background: url(https://volusion.netlify.com/assets/images/homepage_herobg_lgV2.jpg) left center no-repeat;
+    }//cover
+    .jumbo-img {
+      @media #{$medium-and-up} {
+        max-width: 339px;
+        position: absolute;
+        right: 0;
+        margin-right: -169px;
+      }
+      img{
+        @media #{$small-only}{
+          max-width: 187px;
+        }//@medium
+        @media #{$xsmall-only} {
+          max-width: 248px;
+        }//@small-and-down
+      }//img
+    }//jumber-img
+  }//hgroup
+  .section-1{
+    overflow: hidden;
+    .left-side{
+      z-index: 2;
+    }
+    .right-side{
+      img{
+        opacity:0;
+       transition:opacity .3s;
+      
+        @media #{$large-and-up}{
+           position: relative;
+          left: -100px;
+          z-index: 0;
+        }
+        @media #{$medium-only}{
+          top: 30px;
+          left: -40px;
+          width: 163%;
+          height: auto;
+        }
+      }
+    }
+  }//section-1
+  .section-2{
+    /* Slider */
+    .col.pull-l6 {
+      position: relative;
+      @media #{$medium-and-up}{
+        direction: rtl;
+      }
+    }
+    .col.push-l6{
+      @media screen and (min-width:1201px) and (max-width:1440px) {
+        position: relative;
+        left: 580px;
+      }
+      &.valign-middle-40{
+        @media #{$small-and-down}{
+          top:0;
+          @include translate(0,0);
+        }
+      }
+    }
+    .img-wrap img{
+      @media screen and (max-width:1662px) and (min-width:1200px){
+        width: 135%;
+        position: relative;
+        right: -5%;
+      }
+      @media screen and (max-width:1360px) and (min-width:1200px){
+        right:-12%;
+      }
+      @media screen and (max-width:1200px) and (min-width:993px) {
+        position:relative;
+        right:30px;
+        width:100%;
+      }
+    }//img-wrap img
+  }//section-2
+  .section-3{}//section-3
+  .section-4{}//section-4
+  .section-6{
+    .cover{
+      background-image:url(https://volusion.netlify.com/assets/images/homepage-brand_medusa_bg.jpg);
+      height:500px;
+      right: 0;
+      top:0;
+      width:100%;
+      background-position:top left;
+      
+      @media #{$medium-and-up}{
+        position:absolute;
+        width: 50%;
+        height:100%;
+        background-position: 20% center;
+      }
+      @media #{$small-and-down}{
+        background-image: url(https://volusion.netlify.com/assets/images/homepage_medusaBg_sm.jpg);
+      }
+      @media screen and (max-width: 350px){
+        background-position: -95px top;
+      }
+
+    }
+  }//section-6
+}//homepage

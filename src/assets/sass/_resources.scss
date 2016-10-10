@@ -1,0 +1,49 @@
+// Resources > Support
+.ecommerce-solutions-help {
+	.hero {
+		background-image: url(/assets/images/ecommerce-solutions-help-hero.jpg);
+	}
+}
+
+//Resources > Support > FAQs
+.all-faqs {
+	.hero {
+		background-image: url(/assets/images/faqs-hero.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/faqs-hero-sm.jpg);
+		}
+	}
+}
+
+//Resources > Landing Page
+.how-to-sell-on-amazon {
+	.hero {
+		background-image: url(/assets/images/how-to-sell-on-amazon-hero.jpg);
+		@media #{$medium-and-down} {
+			a.btn {
+				display: block;
+				max-width: 320px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+//Resources > Landing Page
+.how-to-sell-on-ebay {
+	.hero {
+		background-image: url(/assets/images/how-to-sell-on-ebay-header-bg.jpg);
+		@media #{$medium-and-down} {
+			background-image: url(/assets/images/how-to-sell-on-ebay-header-bg-sm.jpg);
+		}
+		@media #{$medium-and-down} {
+			a.btn {
+				display: block;
+				max-width: 320px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}

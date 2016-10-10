@@ -1,0 +1,64 @@
+.modal-yt-640-360 {
+	/* optimized for  */
+	background-color: transparent;
+  text-align: center;
+  height: 0;
+  padding-top: 30.9375%;
+  iframe {
+  	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+.modal-wistia-video{
+	overflow:hidden;
+	background-color: #000;
+}
+.play-icon {
+	position: relative;
+	display: block;
+}
+.play-icon:before,
+.play-icon:after {
+	font-family: FontAwesome;
+	position: absolute;
+	line-height: 1;
+	top: 50%;
+	left: 50%;
+	-moz-transition:  all .4s;
+	-o-transition: all .4s;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+} 
+.play-icon:before {
+	//circle
+	content: "\f111";
+	opacity: .5;
+	font-size: 72px;
+	margin-top: -36px;
+	margin-left: -30.5px;
+	color: #000;
+
+}
+.play-icon:after {
+	//play btn
+	content: "\f04b";
+	opacity: 1;
+	font-size: 36px;
+	margin-top: -18px;
+	margin-left: -10px;
+	color: #fff;
+}
+.play-icon:hover:before{
+	font-size: 120px;
+	margin-top: -60px;
+	margin-left: -51px;
+	opacity: .7;
+}
+.play-icon:hover:after{
+	font-size: 44px;
+	margin-top: -22px;
+	margin-left: -14px;
+}

@@ -1,0 +1,334 @@
+.volusion-payments {
+	padding-bottom: 452px !important;
+	
+	/* Loader */
+		/*Spinner*/
+	.overlay {
+	  position: fixed;
+	  height: 100%;
+	  width: 100%;
+	  background-color: rgba(0,0,0,0.7);
+	  z-index: 300;
+	}
+	.loading {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  font-size: 0;
+	  &.reversed {
+	    li {
+	        border: 3px solid white;
+	        animation: LOADINGREV 2s infinite;
+	        &:nth-child(1n) {
+	          animation-delay: 0s;
+	        }
+	        &:nth-child(2n) {
+	          animation-delay: 0.2s;
+	        }
+	        &:nth-child(3n) {
+	          animation-delay: 0.4s;
+	        }
+	      }
+	  }
+	  li {
+	    height: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 0;
+	    width: 0;
+	    margin: 0;
+	    height: 20px;
+	    width: 20px;
+	    border: 3px solid #4ad4c9;
+	    border-radius: 100%;
+	    transform: transformZ(0);
+	    animation: LOADING 2s infinite;
+	    &:nth-child(1n) {
+	      left: -40px;
+	      animation-delay: 0s;
+	    }
+	    &:nth-child(2n) {
+	      left: 0;
+	      animation-delay: 0.2s;
+	    }
+	    &:nth-child(3n) {
+	      left: 40px;
+	      animation-delay: 0.4s;
+	    }
+	  }
+	}
+	@keyframes  LOADING {
+	  0%   { 
+	    transform: scale(0.5);
+	    background: #4ad4c9;
+	  }
+	  50%   { 
+	    transform: scale(1);
+	    background: transparent;
+	  }
+	  100% { 
+	    transform: scale(0.5);
+	    background: #4ad4c9;
+	  }
+	}
+	
+	/* Page Styles */
+	.disabled {
+	  opacity:0.5;
+	  cursor: initial;
+	}
+	.validation{
+	  color:#fe5f55;
+	}
+	[materialize-tooltip] {
+	  color:#02868b!important;
+	}
+	.backStep {
+	  padding-top:10px;
+	}
+	.backStep {
+		i{
+			top: 6px;
+	  	position: relative;
+		}
+	}
+	.cbox-label {
+	  top:4px;
+	}
+	.taxID {
+		label {
+			left:0;
+		}
+	}
+	.sameSSN {
+	  top:-15px;
+	}
+	.dollarAmount i {
+		display:none;
+		position:absolute;
+		top:12px;
+	}
+	.dollarAmount i.active {
+		display:initial;
+	}
+	.dollarAmount input {
+		padding-left:22px;
+	}
+
+
+	/* Fancy Select Styles */
+	div.fancy-select {
+	  position: relative;
+	}
+	div.fancy-select.disabled {
+	  opacity: 0.5;
+	}
+	div.fancy-select select:focus + div.trigger {
+	 
+	}
+	div.fancy-select select:focus + div.trigger.open {
+
+	}
+	div.fancy-select div.trigger {
+	  border-radius: 1px;
+	  font-size:0.875em;
+	  cursor: pointer;
+	  padding: 11px 24px 9px 9px;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  position: relative;
+	  background: #FFF;
+	  border: 1px solid #d1d1d1;
+	  color: rgba(0,0,0,0.3);
+	  width: 100%;
+	  transition: all 240ms ease-out;
+	  -webkit-transition: all 240ms ease-out;
+	  -moz-transition: all 240ms ease-out;
+	  -ms-transition: all 240ms ease-out;
+	  -o-transition: all 240ms ease-out;
+	}
+	div.fancy-select div.trigger:after {
+	  content: "";
+	  display: block;
+	  position: absolute;
+	  width: 0;
+	  height: 0;
+	  border: 5px solid transparent;
+	  border-top-color: #4B5468;
+	  top: 20px;
+	  right: 9px;
+	}
+	div.fancy-select div.trigger.open {
+	  background: #FFF;
+	  border: 1px solid #d1d1d1;
+	  color: rgba(0,0,0,0.3);
+	  box-shadow: none;
+	}
+	div.fancy-select div.trigger.open:after {
+	  border-top-color: #7A8498;
+	}
+	div.fancy-select ul.options {
+	  list-style: none;
+	  margin: 0;
+	  font-size:12px;
+	  position: absolute;
+	  top: 40px;
+	  left: 0;
+	  visibility: hidden;
+	  opacity: 0;
+	  z-index: 50;
+	  max-height: 400px;
+	  overflow-y: auto;
+	  overflow-x:hidden;
+	  background: #FFF;
+	  border-radius: 1px;
+	  border: 1px solid #d1d1d1;
+	  padding-left: 0;
+	  width:100%;
+	  max-width:400px;
+	  transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	  -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	  -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	  -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	  -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	}
+	div.fancy-select ul.options.open {
+	  visibility: visible;
+	  opacity: 1;
+	  transition: opacity 300ms ease-out, top 300ms ease-out;
+	  -webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	  -moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	  -ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	  -o-transition: opacity 300ms ease-out, top 300ms ease-out;
+	}
+	div.fancy-select ul.options.overflowing {
+	  top: auto;
+	  bottom: 40px;
+	  transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	  -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	  -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	  -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	  -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	}
+	div.fancy-select ul.options.overflowing.open {
+	  top: auto;
+	  bottom: 50px;
+	  transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	  -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	  -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	  -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	  -o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	}
+	div.fancy-select ul.options li {
+	  padding: 8px 0px 8px 5px;
+	  color: rgb(51, 51, 51);
+	  cursor: pointer;
+
+	  transition: all 150ms ease-out;
+	  -webkit-transition: all 150ms ease-out;
+	  -moz-transition: all 150ms ease-out;
+	  -ms-transition: all 150ms ease-out;
+	  -o-transition: all 150ms ease-out;
+	}
+	div.fancy-select ul.options li.selected {
+	  background-color:#005685;
+	  color:#FFF;
+	}
+	div.fancy-select ul.options li.hover {
+	  opacity: 0.5;
+	}
+
+	/* Progress Bar Styles */
+	.form-step {
+	  width: 310px;
+	  margin: 50px auto;
+	  text-align: center;
+	  .stepText {
+		  color: #fe5f55;
+		}
+		.progress-bar {
+		  position: relative;
+		  max-width: 310px;
+		  width: 100%;
+		  height: 10px;
+		  border-radius: 20px;
+		  overflow: hidden;
+		  background: #dbdbdb;
+		  margin: 0 auto;
+		}
+		.white-bar {
+		  display: block;
+		  width: 20px;
+		  height: 14px;
+		  background: url('https://s30.postimg.org/tg85hw9nh/white_bar.png');
+		  position: absolute;
+		  left: 27%;
+		  z-index: 2;
+
+		  &.bar-2{
+		  	left: 62%;
+		  	z-index: 2;
+		  }
+		}
+		.progress-bar-overlay-orange {
+		  position: absolute;
+		  max-width: 330px;
+		  width: 105%;
+		  height: 10px;
+		  right: 105%;
+		  -webkit-transform: skew(-40deg);
+		  -moz-transform: skew(-40deg);
+		  -o-transform: skew(-40deg);
+		  overflow: hidden;
+		  background: #fe5f55;
+		  margin: 0 auto;
+		  margin-left: -5px;
+		}
+		.progress-bar-overlay-green {
+		  position: absolute;
+		  max-width: 330px;
+		  width: 105%;
+		  height: 10px;
+		  right: 105%;
+		  -webkit-transform: skew(-40deg);
+		  -moz-transform: skew(-40deg);
+		  -o-transform: skew(-40deg);
+		  overflow: hidden;
+		  background: #4ad4c9;
+		  margin: 0 auto;
+		  margin-left: -5px;
+		}
+		.step2text {
+		  display: none;
+		}
+		.step3text {
+		  display: none;
+		}
+		.finishText {
+		  display: none;
+		  color: #4ad4c9;
+		  font-size: 1.5em;
+		}
+	}
+	/* Animations */
+	@-webkit-keyframes sk-stretchdelay {
+	  0%, 40%, 100% { -webkit-transform: scaleY(0.0) }  
+	  20% { -webkit-transform: scaleY(5.0); background-color: #FD9A62; }
+	}
+
+	@keyframes sk-stretchdelay {
+	  0%, 40%, 100% { 
+	    transform: scaleY(0.0);
+	    -webkit-transform: scaleY(0.0);
+	  }  20% { 
+	    transform: scaleY(5.0);
+	    background-color: #FD9A62;
+	    -webkit-transform: scaleY(5.0);
+	  }
+	}
+}

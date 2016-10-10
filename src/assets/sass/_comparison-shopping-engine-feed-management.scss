@@ -1,0 +1,57 @@
+.comparison-shopping-engine-feed-management {
+    .section-1 {
+        background: url('/assets/images/comparison-shopping-engine-feed-management-hero-m.jpg') center top no-repeat;
+        background-size: cover;
+        max-height: 530px;
+        @media screen and (min-width: $medium-screen-min) {
+            background: url('/assets/images/comparison-shopping-engine-feed-management-hero.jpg') center top no-repeat;
+            background-size: cover;
+        }
+    }
+    .max-width-1080 {
+        max-width: 1080px !important;
+    }
+    .max-width-960 {
+        max-width: 960px !important;
+    }
+    .tooltipped {
+        cursor: pointer;
+        @media screen and (max-width: $xsmall-screen-max) {
+            padding: .5rem !important;
+            padding-right: 0 !important;
+        }
+    }
+    @media screen and (max-width: $small-screen-max) {
+        .section-4 {
+            .container {
+                .btn.request-quote {
+                    line-height: 1;
+                    padding: 14px 4px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $xsmall-screen-max) {
+        .section-4 {
+            .container {
+                .btn.request-quote {
+                    line-height: 1;
+                    padding: 7px;
+                }
+            }
+        }
+        table .table-header {
+            font-size: 13px !important;
+        }
+        table .table-pricing {
+            font-size: 12px !important;
+        }
+        table .btn {
+            padding: 0 0.4em;
+            font-size: 12px;
+        }
+    }
+    .material-tooltip {
+        max-width: calc(25% - 4px);
+    }
+}

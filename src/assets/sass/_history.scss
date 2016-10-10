@@ -1,0 +1,364 @@
+.history-page{
+	#main{
+		padding-bottom:0;
+	}
+
+	/*****Icons****/ 
+    [class*="icon-"] {
+
+      background-image: url(/assets/images/history-icon-sprite.png);
+	    background-repeat: no-repeat;
+	    display: inline-block;
+	    line-height: 14px;
+	    margin: auto;
+	    vertical-align: text-top;
+	    height: 68px;
+
+	    &.icon-people {
+				background-position: 0 0;
+		    width: 68px;
+	    }
+	    &.icon-key{
+	    	background-position: -8px -664px;
+				width: 78px;
+				height: 58px
+	    }
+	    &.icon-group{
+	    	background-position: -104px -660px;
+				width: 88px;
+				height: 62px
+	    }
+	    &.icon-scissors-cut{
+	    	background-position: -210px -664px;
+				width: 107px;
+				height: 62px;
+	    }
+	    &.icon-store {
+	    	background-position: 0 -70px;
+				width: 71px;
+	    }
+	    &.icon-money-bag{
+				background-position: 6px -139px;
+				width: 55px;
+	    }
+	    &.icon-shake {
+        background-position: -92px -2px;
+		    width: 92px;
+		    height: 55px;
+	    }
+	    &.icon-plane {
+        background-position: -193px 0px;
+		 		width: 69px;
+		 		height: 50px
+	    }
+	    &.icon-burst {
+        background-position: -284px -2px;
+				width: 68px;
+	    }
+	    &.icon-sunset {
+        background-position: -106px -74px;
+				width: 87px;
+				height: 46px;
+	    }
+	    &.icon-pong {
+        background-position: -228px -64px;
+				width: 64px;
+	    }
+	    &.icon-medicine {
+        width: 69px;
+        background-position: 0 -230px;
+        height: 77px;
+      }
+      &.icon-vocation {
+        height: 77px;
+        width: 70px;
+        background-position: -102px -230px;
+      }
+      &.icon-price {
+        height: 77px;
+        width: 67px;
+        background-position: -200px -219px;
+      }
+      &.icon-parental {
+        height: 77px;
+        width: 26px;
+        background-position: -303px -230px;
+      }
+      &.icon-fitness {
+        background-position: 0 -321px;
+        width: 70px;
+        height: 69px;
+      }
+      &.icon-beer {
+        width: 53px;
+        height: 69px;
+        background-position: -102px -349px;
+      }
+      &.icon-snacks {
+        background-position: -200px -342px;
+        width: 67px;
+        height: 69px;
+      }
+      &.icon-love {
+        width: 51px;
+        height: 69px;
+        background-position: -304px -349px;
+      }
+      &.icon-dog {
+        width: 67px;
+        height: 55px;
+        background-position: 0 -451px;
+      }
+      &.icon-hanger {
+        background-position: -102px -443px;
+        width: 78px;
+        height: 55px;
+      }
+      &.icon-massage {
+        background-position: -200px -448px;
+        width: 70px;
+        height: 55px;
+      }
+      &.icon-sports {
+        background-position: -304px -452px;
+        width: 55px;
+        height: 55px;
+      }
+    }
+    
+
+	.hero{
+
+		background:url(/assets/images/history-hero-bg.jpg)no-repeat top center;
+		background-size:cover;
+		@media #{$small-and-down}{
+			background:url(/assets/images/history-hero-bg-sm.jpg)no-repeat top center;
+			background-size:cover;
+		}
+		.trans-white{
+			width:505px;
+			height:505px;
+			position: relative;
+			&:before {
+			    content: "";
+			    position: absolute;
+			    width: 105%;
+			    height: 105%;
+			    top: -12px;
+			    left: -12px;
+			    background: rgba(255, 255, 255, 0.55);
+			    z-index: -1;
+			    border-radius: 50%;
+			}
+			img{
+				position: absolute;
+				top: -90px;
+				left: 216px;
+				@media #{$xsmall-only}{
+					top: -75px;
+					left: 113px;
+				}
+			}
+			h1, .h1{
+				padding: 0 1rem 0;
+			}
+			@media #{$xsmall-only} {
+			    width:300px;
+			    height:300px;
+			    padding-top:0.6rem;
+			    &:before{
+			    	top: -8px;
+	    			left: -8px;
+			    }
+			    h1, .h1{
+			    	font-size:2rem;
+			    	padding:0;
+			    }
+			    h2, .h2{
+			    	font-size:1.1rem;
+			    }
+		  	}
+		  	@media screen and (max-width:329px){
+			  	width:290px;
+			  	height:290px;
+		  	}
+		}//trans-white
+	}//hero
+
+	.section-1{
+	}//section-1
+
+	.section-2{
+		background:url(/assets/images/history-core-bg.jpg)no-repeat top center;
+		background-size:cover;
+		background-attachment:fixed;
+
+		.h-subhead{
+			max-width: 1020px;
+			margin: auto;
+		}
+
+		.volusion-core-values{
+
+			max-width: 760px;
+			margin: auto;
+
+			.row{
+				margin: 0;
+			}
+
+			@media #{$medium-and-up}{
+				.row:not(:last-child){
+					margin-bottom: 2em;
+				}
+			}
+
+			.core-value-wrapper{
+				margin: 0 auto 1em auto;
+				border-radius: 50%;
+	    	border: 2px solid #fff;
+		    width: 200px;
+		    height: 200px;
+		    padding: 30px;
+		    font-size: 1em;
+		    font-weight: 400;	
+
+		    .core-value-icon{
+		    	height: 82px;
+		    }
+			}
+
+			@media #{$medium-and-down}{
+				max-width: 700px;
+				margin: auto;
+			}
+			
+		}//ul.volusion-core-values
+ 	 	
+	}//section-2
+
+	.section-3{
+		.row .col {
+			margin-bottom:1.5rem;
+			.turquoise {
+				line-height: 1.2;
+			}
+		}
+		.flex {
+			-ms-flex-align: stretch;
+			-ms-flex-flow: row wrap;
+			a {
+				-ms-flex: 0 1 auto;
+				-ms-flex-align: center;
+			}
+		}
+		figure{
+			margin:0;
+			*{
+				display:block;
+			}
+			a:hover{
+				opacity:1 !important;
+			}
+			&:hover figcaption{
+				opacity: 1;
+			}
+			figcaption{
+				background: rgba(0, 0, 0, 0.5);
+			    position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    left: 0;
+			    top: 0;
+			    opacity: 0;
+			    -webkit-transition: all ease-in-out 0.5s 0s;
+			    -moz-transition: all ease-in-out 0.5s 0s;
+			    transition: all ease-in-out 0.5s 0s;
+			    vertical-align: middle;
+			    padding-top: 20%;
+			    pointer-events: none;
+			    .separator {
+				    height: 1px;
+				    width: 75px;
+				    background: #fff;
+				    margin: 10px 0;
+				    line-height: 0;
+				}
+			}
+		}
+
+		.learn-more-cta{
+			min-height: 200px;
+			span{
+				font-size: 1.5em;
+			}
+			@media #{$medium-only}{
+				span{
+					font-size: 1.4em;
+				}
+			}
+
+			i{
+				font-size: 1.9em;
+				vertical-align: top;
+				position: relative;
+				top: 2px;
+				padding-left: 5px;
+			}
+		}
+
+	}//section-3
+
+	.section-4{
+		background:url(/assets/images/history-work-img.jpg)no-repeat top center;
+		background-size:cover;
+	}//section-4
+
+	.section-5{
+		.row {
+			.col {
+				margin-top: 3rem;	
+				height: 140px;			
+			}//col
+		}//row
+	}//section-5
+
+	.section-6{
+		blockquote{
+			max-width: 920px;
+			margin: 0 auto;
+		}
+	}//section-6
+
+	.section-7{
+		background:url(/assets/images/history-group-img.jpg)no-repeat center top;
+		background-size:cover;
+		@media #{$medium-and-up}{
+			background-attachment:fixed;
+		}
+		@media #{$small-and-down}{
+			background:url(/assets/images/history-group-img-sm.jpg)no-repeat center top;
+			background-size:cover;
+		}
+
+		li {
+	    width: 16.2%;
+	    margin-bottom: 1rem;
+	    
+	    @media screen and (max-width:767px){
+	    	width: 32%;
+			}
+			@media screen and (max-width:400px){
+        width: 49%;
+   		}
+		}//li
+		span.pos-a.white {
+	    bottom: -1.5rem;
+	    left: 50%;
+	    height: 1px;
+	    width: 93px;
+	    margin-left: -46.5px;
+		}//span.pos-a.white
+	}//section-7
+
+}//history

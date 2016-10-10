@@ -1,0 +1,35 @@
+.ecommerce-business-tools{
+	.hero{
+		background:url(/assets/images/ecommerce-business-tools-hero-bg.jpg)no-repeat center;
+		background-size:cover;
+		.btn{
+			margin-left: 2%;
+			&:first-of-type{
+				margin-left:0;
+			}
+			@media screen and (max-width:745px){
+				display: block;
+    		margin-bottom: 1rem;
+			}
+		}//btn
+	}//hero
+
+	.section-4{
+		.flex{
+			display: flex;
+			@media #{$small-and-down}{
+				display: block;
+    			.col{
+    				margin-bottom: 60px;
+    			}
+			}
+		}
+		.col{
+			a{
+				margin-left: -93px;
+				min-width: 190px;
+
+			}
+		}
+	}//.section-4
+}//ecommerce-business-tools

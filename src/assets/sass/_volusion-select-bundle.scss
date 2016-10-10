@@ -1,0 +1,14 @@
+.volusion-select-bundle {
+    .hero {
+        position: relative;
+        background: url('/assets/images/volusion-select-bundle-hero-m.jpg') center top no-repeat;
+        background-size: cover;
+        @media screen and (min-width: $medium-screen-min) {
+            background: url('/assets/images/volusion-select-bundle-hero.jpg') center no-repeat;
+            background-size: cover;
+        }
+    }
+    i.fa {
+        font-size: 3.5rem;
+    }
+}

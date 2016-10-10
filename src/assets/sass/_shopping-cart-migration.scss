@@ -1,0 +1,20 @@
+.shopping-cart-migration {
+    .hero {
+        background: url('/assets/images/shopping-cart-migration-hero.jpg')no-repeat center;
+        background-size: cover;
+        min-height: 770px;
+
+        @media #{$xsmall-only}{
+
+            background: url('/assets/images/shopping-cart-migration-hero-m.jpg')no-repeat center;
+            background-size: cover;
+            min-height: auto;
+
+            .container{
+                background-color: rgba(255,255,255,.6);
+                padding: 20px;
+            }
+        }
+
+    }
+}

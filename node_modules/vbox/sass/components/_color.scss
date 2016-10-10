@@ -1,0 +1,232 @@
+// Utility Color Classes
+
+//.success {
+//
+//}
+
+// Google Color Palette defined: http://www.google.com/design/spec/style/color.html
+
+$fjord: #485870;
+$persimmon: #fe5f55;
+$aqua: #4ad4c9;
+$sea-green: #a2eda9;
+$lagoon: #02868b;
+$koromiko: #ffbf69;
+$blue-stone: #01586b;
+$shuttle-grey: #575d68;
+
+$vol-purple: $fjord;
+$vol-red: $persimmon;
+$vol-turquoise: $aqua;
+$vol-green: $sea-green;
+$vol-teal: $lagoon;
+$vol-yellow: $koromiko;
+$vol-blue: $blue-stone;
+$vol-grey: $shuttle-grey;
+
+$old-dark-blue: $fjord;       // formerly #015581
+$old-orange: $persimmon;      // #fc813b
+$old-green: $aqua;            // #a3cf2c
+$old-light-blue: $sea-green;  // #80cfeb
+$old-blue: $lagoon;           // #00799e
+
+$red: (
+  "lighten-2":  #f69993,
+  "lighten-1":  #fd7f77,
+  "base":       $vol-red,
+  "darken-1":   #fe3f33
+);
+
+$purple: (
+  "lighten-2":  #8b9bb5,
+  "lighten-1":  #556785,
+  "base":       $vol-purple,
+  "darken-1":   #3b485b
+);
+
+$blue: (
+  "lighten-2":  #a7e4ef,
+  "lighten-1":  #01738d,
+  "base":       $vol-blue,
+  "darken-1":   #013c48
+);
+
+$teal: (
+  "lighten-2":  #9becef,
+  "lighten-1":  #03b5bd,
+  "base":       $vol-teal,
+  "darken-1":   #02666a
+);
+
+$turquoise: (
+  "lighten-2":  #b7ede9,
+  "lighten-1":  #73ddd5,
+  "base":       $vol-turquoise,
+  "darken-1":   #2dbdb1
+);
+
+$green: (
+  "lighten-2":  #cdf5cf,
+  "lighten-1":  #b0f1b6,
+  "base":       $vol-green,
+  "darken-1":   #6be476
+);
+
+$yellow: (
+  "lighten-2":  #ffdcb3,
+  "lighten-1":  #ffcc94,
+  "base":       $vol-yellow,
+  "darken-1":   #ffb05b
+);
+
+$grey: (
+  "lighten-3":  #f3f3f5,
+  "lighten-2":  #DDDEE0,
+  "lighten-1":  #8C9098,
+  "base":       $vol-grey,
+  "darken-1":   #484C56,
+  "darken-2":   #303845
+);
+
+
+$black:        #000000;
+$white:        #FFFFFF;
+$trans-white:  rgba(255, 255, 255, 0.85);
+$transparent:  transparent;
+
+$shades: (
+  "black":        $black,
+  "white":        $white
+);
+
+$transparent-shades: (
+  "trans-white":  $trans-white,
+  "transparent":  $transparent
+);
+
+$colors: (
+  "red": $red,
+  "purple": $purple,
+  "blue": $blue,
+  "teal": $teal,
+  "turquoise": $turquoise,
+  "green": $green,
+  "yellow": $yellow,
+  "grey": $grey,
+  "shades": $shades
+);
+
+
+// Color Classes
+
+@each $color_name, $color in $colors {
+  @each $color_type, $color_value in $color {
+    @if $color_type == "base" {
+      .#{$color_name} {
+        background-color: $color_value !important;
+      }
+      .text-#{$color_name} {
+        color: $color_value !important;
+      }
+      .border-#{$color_name} {
+        border-color: $color_value !important;
+      }
+      .btn.#{$color_name}:hover {
+        background-color: darken( $color_value, 7% ) !important;
+      }
+      .btn.text-#{$color_name}:hover {
+        color: darken( $color_value, 15% ) !important;
+      }
+      .btn.border-#{$color_name}:hover {
+        border-color: darken( $color_value, 15% ) !important;
+      }
+      a.text-#{$color_name}:hover {
+        color: lighten( $color_value, 10% ) !important;
+      }
+    }
+    @else {
+      .#{$color_name}.#{$color_type} {
+        background-color: $color_value !important;
+      }
+      .text-#{$color_name}.text-#{$color_type} {
+        color: $color_value !important;
+      }
+      .border-#{$color_name}.border-#{$color_type} {
+        border-color: $color_value !important;
+      }
+    }
+  }
+}
+
+// Shade classes
+@each $color, $color_value in $shades {
+  .#{$color} {
+    background-color: $color_value !important;
+  }
+  .text-#{$color} {
+    color: $color_value !important;
+  }
+  .border-#{$color} {
+    border-color: $color_value !important;
+  }
+  .btn.border-#{$color} {
+    border-color: $color_value!important;
+  }
+  .btn.border-#{$color}:hover {
+    border-color: rgba($color_value, 0.3)!important;
+  }
+  .btn.text-#{$color} {
+    color: $color_value!important;
+  }
+  .btn.text-#{$color}:hover {
+    color: $color_value!important;
+    opacity: 1;
+  }
+  .btn.#{$color} {
+    background-color: $color_value!important;
+  }
+  .btn.#{$color}:hover {
+    background-color: rgba($color_value, 0.7)!important;
+  }
+}
+
+// Transparent Classes
+@each $color, $color_value in $transparent-shades {
+  .#{$color} {
+    background-color: $color_value !important;
+  }
+  .text-#{$color} {
+    color: $color_value !important;
+  }
+  .border-#{$color} {
+    border-color: $color_value !important;
+  }
+}
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{name}` in $colors.";
+  @return null;
+}
+
+
+// Borders
+.border,
+[class^="border-"],
+[class*=' border-'] {
+  border-style: solid!important;
+  border-width: 1px!important;
+}
+.border-none {border-width: 0px 0px 0px 0px!important;}
+.border-top {border-width: 1px 0px 0px 0px!important;}
+.border-right {border-width: 0px 1px 0px 0px!important;}
+.border-bottom {border-width: 0px 0px 1px 0px!important;}
+.border-left {border-width: 0px 0px 0px 1px!important;}

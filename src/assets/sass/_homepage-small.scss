@@ -1,0 +1,251 @@
+p, a{
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+
+.homepage-small{
+
+	@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+	}
+
+	@mixin transform($transform...) {
+    -moz-transform:    $transform;
+    -o-transform:      $transform;
+    -webkit-transform: $transform;
+    transform:         $transform;
+	}
+
+
+	/* Clients partial
+	----------------------------- */
+	.footer-clients-partial{
+		@media #{$medium-and-up}{
+			padding-top: 0px !important;
+			padding-bottom: 0px !important;
+		}
+	}
+
+	/* Hero Section
+	------------------------------ */
+	section#hero{
+		@media #{$medium-and-up}{
+			// height = 100vh - top menu - bucket heights - trust bar height - padding
+			height: calc(100vh - 70px - 250px - 74px - 2rem);
+		  min-height: 402px;
+			max-height: 600px;
+
+			.row{
+				height: 100%;
+			}
+		}
+
+		.hero-bg{
+			background-image: url("/assets/images/hp-hero-bg.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+
+			@media #{$small-and-down}{
+				background-image: url(/assets/images/hp-hero-bg-small-a.jpg);
+		    background-size: 112%;
+		    background-position: 100% 69%;
+			}
+			@media screen and (max-width:665px){
+				background-image: url(/assets/images/hp-hero-bg-small-b.jpg);
+    		background-size: cover;
+			}
+			@media screen and (min-width:871px) and (max-width:992px){
+				background-position: 100% -13vw;
+			}
+		}
+
+		.img-wrap{
+			width: 50%;
+			min-width: 220px;
+			max-width: 25vh;
+			height: auto;
+			margin: auto;
+
+			@media #{$medium-and-up}{
+				margin: initial;
+				margin-right: -75px;
+			}
+		}
+
+		.text-wrap{
+			margin: auto;
+			max-width: 70%;
+
+			@media #{$medium-and-up}{
+				margin-left: 17%;
+			}
+		}
+	}
+
+	/* Buckets Section
+	------------------------------ */
+	section#buckets{
+
+		a {
+			& *{
+				pointer-events: none; // remove pointer clicks from nested items
+			}
+
+			&:hover{
+				.content-container{
+					@include transform(scale(1.04));
+				}
+			}
+		}
+
+		.container{
+			margin: auto;
+			width: 100%;
+
+			.main-text{
+				font-size: 1.5rem;
+
+				@media #{$medium-only}{
+					font-size: 1.2rem;
+				}
+			}
+
+			// remove column padding on mobile
+			& > .row > .col{
+				@media #{$xsmall-only}{
+					padding: 0;
+				}
+			}
+			
+		}
+
+		/* fills up column */
+		.content-wrap{
+			width: 100%;
+			height: 100%;
+			display: block;
+			overflow: hidden;
+		}
+
+		.content-container{
+			width: 100%;
+			max-width: 520px;
+			height: 250px;
+			margin: auto;
+			position: relative;
+			overflow: hidden;
+
+			@include transition(all .2s ease);
+
+			& > .row {
+				height: 100%;
+			}
+		}
+
+		/* all-in-one
+		===================*/
+		.all-in-one{
+			.content-wrap{
+				background-color: #8b9bb5;
+			}
+			
+			.main-text{
+				margin-top: -70px;
+				margin-right: 30px;
+
+				@media #{$small-only}{
+					margin-top: 0;
+				}
+			}
+
+			.image-wrap{
+				position: relative;
+
+				@media #{$large-and-up}{
+					left: 10px;
+				}
+
+				.laptop-img{
+					position: relative;
+					top: 20px;
+					left: -0px;
+					width: 226px;
+				}
+
+				.tablet-img{
+					position: absolute;
+					top: 190px;
+					left: 135px;
+					width: 160px;
+				}
+
+				.mobile-img{
+					position: absolute;
+					top: 210px;
+					left: -20px;
+					width: 90px;
+				}
+			}
+		}
+
+		/* Pricing
+		============*/
+		.pricing{
+			.content-wrap{
+				background-color: #4ad4c9;
+			}
+
+			.text-wrap{
+				margin: auto;
+				padding: 0 2em;
+				max-width: 300px;
+			}
+		}
+
+		/* Testimonials
+		====================*/
+		.testimonials{
+			.content-wrap{
+				background-color: #029297;
+			}
+
+			.main-text{
+				margin-top: -40px;
+				margin-right: 40px;
+
+				@media #{$small-only}{
+					margin-top: 0;
+				}
+			}
+
+			.secondary-text{
+				position: absolute;
+				bottom: 40px;
+				right: 0;
+				margin-right: 30px;
+				font-size: .8rem;
+
+				@media #{$small-and-up}{
+					bottom: 0;
+				}
+			}
+
+			.image-wrap{
+
+				.medusa-img{
+					position: relative;
+					width: 200px;
+	 				left: 20px;
+					top: 10px;
+
+					@media #{$medium-only}{
+						left: -20px
+					}
+				}
+			}
+		}
+	}
+}

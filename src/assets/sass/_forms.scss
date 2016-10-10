@@ -1,0 +1,97 @@
+.volusion-forms {
+  [ng\:cloak],
+  [ng-cloak],
+  [data-ng-cloak],
+  [x-ng-cloak],
+  .ng-cloak,
+  .x-ng-cloak {
+    display: none !important;
+  }
+  textarea {
+    height: 7rem;
+  }
+  .clear-both {
+    clear: both;
+  }
+  input {
+    margin-bottom: 0;
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px white inset;
+      &:focus, &:hover{
+      	-webkit-box-shadow: 0 0 0px 1000px white inset;
+      }
+    }
+  }
+  [type="checkbox"]+label {
+    height: 20px;
+    line-height: 20px;
+  }
+  [type="radio"]:not(:checked)+label,
+  [type="radio"]:checked+label {
+    height: 23px;
+    line-height: 23px;
+  }
+  @media screen and (max-width: $xsmall-screen-max) {
+    .row {
+      margin-bottom: 0;
+      .col.xs12 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+/*****************************
+* *   Create Expert Form    * *
+******************************/
+.create-expert {
+  .bs-bb {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .input-field {
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+  .input-field label.active {
+    color: color("turquoise","base");
+    font-weight: bold;
+  }
+  label {
+    font-size: 1rem;
+  }
+  textarea.materialize-textarea {
+    height: auto;
+    min-height: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  #long-description-label,
+  #short-description-label {
+    z-index: -1;
+  }
+  .animate-repeat {
+    line-height:30px;
+    list-style:none;
+    box-sizing:border-box;
+  }
+  .animate-repeat.ng-move,
+  .animate-repeat.ng-enter,
+  .animate-repeat.ng-leave {
+    transition:all linear 0.5s;
+  }
+
+  .animate-repeat.ng-leave.ng-leave-active,
+  .animate-repeat.ng-move,
+  .animate-repeat.ng-enter {
+    opacity:0;
+    max-height:0;
+  }
+
+  .animate-repeat.ng-leave,
+  .animate-repeat.ng-move.ng-move-active,
+  .animate-repeat.ng-enter.ng-enter-active {
+    opacity:1;
+    max-height:30px;
+  }
+}

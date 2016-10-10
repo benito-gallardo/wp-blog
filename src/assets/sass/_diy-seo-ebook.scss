@@ -1,0 +1,142 @@
+.diy-seo-ebook{
+	&.ecommerce-dropshipping-guide {
+		.topcontent .container {
+			max-width: 1100px;
+		}
+		.slidesjs-slide{
+			max-width: 100%;
+			p{
+				font-size: 1rem;
+				color:#303845; // default
+			}
+			.h3{
+				font-size: 32px;
+		    font-weight: bold;
+		    color: #3b3b3b;
+		    margin: 0 0 15px;
+		    @media screen and (max-width:500px){
+		    	font-size: 26px;
+		    }
+			}
+		}
+		.list-wrap {
+		  height: 150px;
+		  display: table-cell;
+		  vertical-align: middle;
+		  @media screen and (max-width: 1080px){
+		  	p{
+		  		font-size: 14px;
+		  		@media screen and (max-width:448px){
+		  			display: none;
+		  		}
+		  	}
+		  	.h3{
+		  		font-size: 16px;
+		  	}
+		  }
+		  @media (max-width: 750px) {
+		  	height: 130px;
+		  }
+		}
+		.section-1{
+			background-image:url(/assets/images/diy-seo-ebook-hero-bg.jpg);
+			@media screen and (max-width:500px){
+				background-position:center top;
+			}
+			h1{
+				width: 0;
+    		height: 0;
+    		overflow: hidden;
+			}
+		}//section-1
+		.section-2{
+			#slide-menu{
+				ul{
+					li{
+						border-color:#d3d4d5;
+					}
+				}
+			}
+			.slidesjs-pagination {
+				z-index: 9;
+				top: 48px;
+				background: #ebebeb;
+				li {
+					a[data-slidesjs-item="1"]{
+						background:#c9f2f8;
+					}
+					a[data-slidesjs-item="2"]{
+						background:#b0eaf4;
+					}
+					a[data-slidesjs-item="3"]{
+						background:#97e2f0;
+					}
+					a[data-slidesjs-item="4"]{
+						background:#7edaec;
+					}
+					a[data-slidesjs-item="5"]{
+						background:#65d2e8;
+					}
+					a[data-slidesjs-item="6"]{
+						background:#33c2e0;
+					}
+					a[data-slidesjs-item="7"]{
+						background:#01b2d8;
+					}
+					a[data-slidesjs-item="8"]{
+						background:#01a0c2;
+					}
+					a[data-slidesjs-item="9"]{
+						background:#018eac;
+					}
+					a[data-slidesjs-item="10"]{
+						background:#017c96;
+					}
+					a{
+						&:hover{
+							background-color: #007189 !important;
+    					text-shadow: 0px 0px 50px #C9F2F8;
+    					color:#fff;
+						}
+						&.active{
+							background-color: #007189 !important;
+						}
+					}
+				}
+			}//slidesjs-pagination
+			.slidesjs-control{
+				min-height: 1650px;
+				@media screen and (max-width:750px){
+					min-height: 1430px;
+				}
+			}//slidesjs-control
+			#slide-6 {
+				img{
+					@media #{$small-and-down}{
+						float:none !important;
+						margin:0 auto;
+						display:block;
+					}
+				}
+			}
+		}//section-2
+		.slide-footer {
+      padding: 20px 0 10px 65px;
+      margin-top:0;
+      @media (max-width: 1080px){
+        padding: 20px 15px 10px 15px;
+    	}
+    }
+    a.red-btn {
+    	@media screen and (max-width:850px){
+				font-size: 1rem;
+				width: 140px;
+				position: relative;
+				left: 11px;
+			}
+    }
+	}//ecommerce-dropshipping-guide
+}//diy-seo-ebook
+.diy-seo-ebook.ecommerce-dropshipping-guide .section-2 .slidesjs-control {
+     min-height: 1570px;
+}

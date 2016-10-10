@@ -1,0 +1,22 @@
+.ecommerce-ssl-certificates {
+    .hero {
+        position: relative;
+        background: url('/assets/images/ecommerce-ssl-certificates-hero.jpg') center top no-repeat;
+        background-size: cover;
+    }
+    table .cell-width{
+        width: 42%;
+    }
+}
+
+.enterprise-ecommerce-software {
+    .hero {
+        background-image: url('/assets/images/enterprise-ecommerce-software-hero.jpg');
+        @media #{$xsmall-and-down} {
+            height: auto;
+        }
+    }
+    .card-logo {
+        height: 118px;
+    }
+}

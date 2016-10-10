@@ -1,0 +1,477 @@
+.ecommerce-dropshipping-guide {
+    .section-1 {
+        position: relative;
+        background: url('/assets/images/ecommerce-dropshipping-guide-hero.jpg') center top no-repeat;
+        background-size: cover;
+        .or-divider {
+            margin: 6px 17px;
+            display: inline-block;
+            font-size: 18px;
+        }
+    }
+    #doba-section .container {
+            max-width: 1100px
+    }
+    /* Media quires for a responsive layout */
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+        body {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+     
+    }
+  
+    /* Jim adds */
+    #main {
+        padding-top: 0 !important;
+        padding-bottom: 5em;
+    }
+    .doba-logo-text {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        display: inline-block;
+        margin: 12px 0;
+        white-space: nowrap;
+    }
+    .doba-logo {
+        background: url('/assets/images/ecommerce-dropshipping-guide-doba-logo.png');
+        height: 25px;
+        width: 135px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 15px;
+    }
+    .slidesjs-slide {
+        padding-left: 65px;
+        padding-top: 0px;
+        max-width: 900px;
+        background: #fff;
+    }
+    .section-1 .btn-section {
+        color: #fff;
+        overflow: hidden;
+    }
+    .section-1 .btn-section span {
+        padding: 6px 17px;
+        display: inline-block;
+        font-size: 18px;
+    }
+    .section-1 a.pdf-download {
+        color: #fff;
+        font-size: 18px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    #slides {
+        position: relative;
+    }
+    .slide-header {
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    a.topcontent {
+        position: absolute;
+        bottom: 0;
+    }
+    span.chapter-count {
+        width: 150px;
+        display: none;
+        text-align: center;
+        color: color("grey","base");
+        font-weight: 600;
+        font-size: 22px;
+        padding: 5px 0px;
+        border-right: 1px solid #a3a3a3;
+    }
+    a.slidesjs-menu {
+        color: #3b3b3b;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 0px;
+        float: left;
+        width: 150px;
+        text-align: center;
+    }
+    span.chapter-name {
+        font-size: 18px;
+        color: #3b3b3b;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .slidesjs-container {
+        float: right;
+        width: 100% !important;
+        padding-left: 150px;
+        height: 100% !important;
+    }
+    .slidesjs-control {
+        width: 100% !important;
+        min-height: 1350px;
+    }
+    .slidesjs-pagination {
+        background: #acd2d7;
+        padding: 0;
+        margin: 0;
+        float: left;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        list-style: none;
+    }
+    .slidesjs-pagination li a.active {
+        color: #fff;
+        background-color: #30666f !important;
+        -moz-box-shadow: inset 0px 0px 70px #0f353b;
+        -webkit-box-shadow: inset 0px 0px 70px #0f353b;
+        box-shadow: inset 0px 0px 70px #0f353b;
+        border: 2px solid #0f353b;
+    }
+    .slidesjs-pagination a {
+        display: inline-block;
+        text-decoration: none;
+        width: 150px;
+        background: #acd2d7;
+        height: 150px;
+        font-size: 66px;
+        font-weight: 600;
+        line-height: 150px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        -moz-box-shadow: inset 0px 0px 2px #fff;
+        -webkit-box-shadow: inset 0px 0px 2px #fff;
+        box-shadow: inset 0px 0px 2px #fff;
+    }
+    .slidesjs-pagination a:hover {
+        color: #fff;
+        background-color: #1e4e55 !important;
+        text-shadow: 0px 0px 50px #acd2d7;
+        -moz-box-shadow: inset 0px 0px 0px #fff;
+        -webkit-box-shadow: inset 0px 0px 0px #fff;
+        box-shadow: inset 0px 0px 0px #fff;
+        border: 3px solid #fff;
+    }
+    #slide-menu {
+        padding-left: 0;
+        padding-top: 0;
+        z-index: 10;
+        background-color: #fff;
+        max-width: 100%;
+    }
+    .slidesjs-slide h3 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #3b3b3b;
+        margin: 0 0 15px;
+    }
+    .slidesjs-slide a {
+        
+        font-weight: bold;
+        text-decoration: none;
+    }
+ 
+    .slidesjs-slide h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #3b3b3b;
+        margin: 20px 0;
+    }
+    .slidesjs-slide p {
+        font-size: 18px;
+        color: color("grey","base");
+    }
+    .slidesjs-slide .list-wrap p {
+        font-size: 18px;
+        color: color("grey","base");
+        margin: 0;
+    }
+    span.list-wrap {
+        height: 150px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .slidesjs-pagination li a[data-slidesjs-item="1"] {
+        background: #acd2d7;
+    }
+    .slidesjs-pagination li a[data-slidesjs-item="2"] {
+        background: #95c6cc;
+    }
+    .slidesjs-pagination li a[data-slidesjs-item="3"] {
+        background: #7eb9c2;
+    }
+    .slidesjs-pagination li a[data-slidesjs-item="4"] {
+        background: #67acb7;
+    }
+    .slidesjs-pagination li a[data-slidesjs-item="5"] {
+        background: #509fab;
+    }
+    .slidesjs-pagination li a[data-slidesjs-item="6"] {
+        background: #458a94;
+    }
+    .slidesjs-pagination li a[data-slidesjs-item="7"] {
+        background: #3a757c;
+    }
+    .slidesjs-pagination li a[data-slidesjs-item="8"] {
+        background: #356a72;
+    }
+    ul.slidesjs-pagination li:first-child {
+        display: none;
+    }
+    .img-left {
+        margin: 0;
+    }
+    .img-margin-top-bot {
+        margin: 15px 0;
+    }
+    .img-margin-top {
+        margin-top: 25px;
+    }
+    .img-margin-bot {
+        margin-bottom: 25px;
+    }
+    .img-margin-left-top {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .list-margin-bot li {
+        margin-bottom: 15px;
+    }
+    .float-right {
+        float: right;
+    }
+    .float-left {
+        float: left;
+    }
+    a.red-btn {
+        display: block;
+        background: #ea5053;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 7px 15px;
+        text-align: center;
+        margin: 0 auto;
+        width: 160px;
+        font-size: 18px;
+    }
+    a.red-btn:hover {
+        background: #ca4648;
+    }
+    a.top-btn {
+        display: none;
+    }
+    a.slidesjs-previous {
+        background: url('/assets/images/ecommerce-dropshipping-guide-arrow-left.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        color: color("grey","base");
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    a.slidesjs-next {
+        background: url('/assets/images/ecommerce-dropshipping-guide-arrow-right.png');
+        background-position: right center;
+        background-repeat: no-repeat;
+        padding-right: 30px;
+        color: color("grey","base");
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    #slide-menu ul {
+        margin: 0;
+        padding: 0;
+    }
+    #slide-menu ul li:first-child {
+        border-top: 1px solid #a3a3a3;
+    }
+    #slide-menu ul li {
+        height: 150px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #a3a3a3;
+        padding: 0px 10px 0 65px;
+    }
+    #slide-menu ul li .h3 {
+        padding: 0;
+        margin: 0 0 4px;
+        line-height: 1.1;
+        font-size: 22px;
+    }
+    .slide-footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin-top: 30px;
+        background: #fff;
+        z-index: 20;
+        padding: 20px 150px 10px 65px;
+    }
+    /* media queries */
+    @media (max-width: 1200px) {
+        a.top-btn {
+            margin-right: 15px;
+        }
+        .slide-footer {
+            padding: 20px 200px 10px 65px;
+        }
+    }
+    @media (max-width: 1080px) {
+        .page-title,
+        .pane-title {
+            font-size: 2.3em;
+        }
+        .slidesjs-slide {
+            padding: 10px 15px 0;
+        }
+        .slide-footer {
+            padding: 20px 200px 10px 30px;
+        }
+        .slidesjs-slide .list-wrap p {
+            font-size: 16px;
+        }
+        #slide-menu ul li {
+            padding: 0px 10px 0 30px;
+        }
+        @media (max-width: 750px) {
+            .section-1 .field-item.v-column.index0,
+            .section-1 h1.page-title {
+                float: left;
+                width: 65%;
+            }
+            .slidesjs-container {
+                padding-left: 60px;
+            }
+            a.top-btn {
+                display: none;
+            }
+            #slide-menu span.list-wrap {
+                height: 130px;
+            }
+            a.slidesjs-menu {
+                float: none;
+                width: 60px;
+                margin: 0 auto;
+                display: block;
+            }
+            #slide-menu ul li {
+                overflow: hidden;
+                height: 130px;
+                padding: 0px 5px 0px 10px;
+            }
+            #slide-menu ul li p {
+                font-size: 15px;
+            }
+            .slidesjs-slide img.little-weightlifter {
+                width: 40%;
+            }
+            #slide-menu ul li .h3 {
+                font-size: 18px;
+            }
+            .slide-header {
+                margin: 0 auto 20px;
+            }
+            .slidesjs-pagination a {
+                width: 60px;
+                height: 130px;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 130px;
+            }
+            .slide-footer {
+                padding: 20px 80px 10px 15px;
+            }
+            .slide-footer a.red-btn {
+                display: none;
+            }
+            .section-1 .btn-section {
+                width: 130%;
+            }
+        }
+        @media (max-width: 600px) {
+            #slide-menu ul li p {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 500px) {
+            #trigger-btn {
+                margin: 0 auto;
+                width: 170px;
+                display: block;
+            }
+            .doba-logo-text {
+                white-space: normal;
+            }
+            .doba-logo {
+                display: block;
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            .section-1 .page-title,
+            .section-1 .pane-title {
+                font-size: 2em;
+            }
+            .section-1 {
+                background-position: left center;
+            }
+            .section-1 .field-item.v-column.index0,
+            .section-1 h1.page-title {
+                float: left;
+                width: 100%;
+            }
+            .section-1 .btn-section {
+                width: 100%;
+            }
+            .slidesjs-slide h3 {
+                font-size: 26px;
+            }
+            .slidesjs-slide p {
+                font-size: 16px;
+            }
+            .section-1 a.red-btn {
+                float: none;
+            }
+            .section-1 span.or-divider {
+                display: inline-block;
+                text-align: center;
+                width: 90%;
+            }
+            .section-1 a.pdf-download {
+                display: block;
+                margin: 0 auto;
+                width: 125px;
+            }
+            #slide-menu ul li .h3 {
+                font-size: 16px;
+            }
+            #slide-menu ul li p {
+                font-size: 12px;
+            }
+            .slide-footer {
+                padding: 20px 80px 10px 15px;
+            }
+            a.slidesjs-previous {
+                background: none;
+                font-size: 12px;
+                padding-left: 0;
+            }
+            a.slidesjs-next {
+                background: none;
+                font-size: 12px;
+                padding-right: 0;
+            }
+        }
+        @media (max-width: 420px) {
+            #slide-menu ul li p {
+                display: none;
+            }
+        }
+    }
+}

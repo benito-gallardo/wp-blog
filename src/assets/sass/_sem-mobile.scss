@@ -1,0 +1,70 @@
+/*
+	SASS for /lp/sem/mobile page
+*/
+
+.lp.sem-mobile{
+	
+	/* Hero Section
+	--------------------------*/
+	section.hero{
+		background-image: url('/assets/images/lp-sem-mobile-hero-bg.jpg');
+		background-size: cover;
+		background-position: 100% 70%;
+	}
+
+	/* Features Section
+	---------------------------*/
+	section.features
+	{
+		.feature{
+			i {
+		    font-size: 4rem;
+		    color: #4ad4c9;
+			}
+			
+			p{
+				max-width: 300px;
+				margin: auto;
+			}
+
+			&:not(:last-child){
+				p{
+					padding-bottom: 60px;
+
+					@media #{$medium-and-up}{
+						padding-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.lp.sem-mobile-a {
+	section.hero{
+		background-image: url('/assets/images/lp-sem-mobile-a-hero.jpg');
+		background-size: cover;
+		border-width: 0 0 5px 0!important;
+		h1 {
+			line-height: 1.2;
+		}
+		.img-storefront {
+			max-width: 250px;
+			width: 33%;
+			min-width: 100px;
+		}
+	}
+	.feature-bullets {
+    .icon-checkmark {
+    	width: 21px;
+    	height: 15px;
+    	background-image: url('/assets/images/lp-sem-mobile-a-checkmark-rounded.png');
+    	background-repeat: no-repeat;
+    	background-size: 100% auto;
+    	display: inline-block;
+      top: 6px;
+    	left: -30px;
+    }
+  }
+}

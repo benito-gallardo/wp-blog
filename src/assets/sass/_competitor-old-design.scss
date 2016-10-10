@@ -1,0 +1,32 @@
+.competitor-layout-a {
+	.competitor-layout-a-video {
+		.valign-wrapper{
+			@media #{$medium-and-up}{
+				margin-top:0 !important;
+			}
+		}
+		.ul-basic{
+			@media #{$medium-and-up}{
+				margin-top:-3rem !important;
+			}
+		}
+	}
+	//close icon for videos
+	@media (max-width:450px){
+		i.material-icons:not(.body-icons) {
+    	left: auto !important;
+    	right:0;
+		}
+	}
+	h3.border {
+    border-top-width: 4px !important;
+	}//h3 top borders
+	tbody{
+		border:none;
+		td{
+			@media #{$small-and-up}{
+				padding: 1rem;
+			}
+		}
+	}
+}//competitor-old-design
